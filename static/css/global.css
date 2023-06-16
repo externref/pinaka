@@ -1,0 +1,8 @@
+@font-face {
+	font-family: "samarkan";
+	src: url("../fonts/samarkan.ttf") format("truetype");
+}
+
+.vedicfont {
+	font-family: "samarkan", sans-serif;
+}

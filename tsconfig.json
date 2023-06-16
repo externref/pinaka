@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"downlevelIteration": true,
+		"target": "ES2017",
+		"module": "commonjs",
+		"sourceMap": true
+	}
+}
