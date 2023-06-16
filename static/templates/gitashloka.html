@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ॐ vedic | home/bhagavadgita</title>
+		<script>
+			var exports = {};
+		</script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="/static/js/gita.js"></script>
+		<link rel="stylesheet" href="/static/css/global.css" />
+	</head>
+
+	<body class="bg-yellow-200">
+		<header class="" , style="background-color: #ff7722">
+			<div class="vedicfont text-white ml-6" , style="font-size: 47px">vedic</div>
+		</header>
+		<div id="gitabanner" class="m-10">श्रीमद्भगवद्गीता | Bhagavad Gita</div>
+		<div id="shloka_container" class="mx-10 mt-10">
+			<div id="shloka_info_container" class="text-amber-800 font-bold">
+				अध्याय: <span id="placeholder_adhyaya"></span> , श्लोक:
+				<span id="placeholder_shloka"></span>
+			</div>
+
+			<div style="border-top: 2px solid; color: #92400e"></div>
+			<div id="shloka_orig_container" class="my-5">
+				<div class="text-amber-800 font-extrabold" style="font-size: x-large">श्लोक</div>
+				<span id="placeholder_original"></span>
+			</div>
+			<div style="border-top: 3px solid; color: rgb(146 64 14)"></div>
+			<div id="shloka_hindi_container" class="my-5">
+				<div class="text-amber-800 font-extrabold underline" style="font-size: x-large">
+					अनुवाद
+				</div>
+				<span id="placeholder_hindi"></span>
+			</div>
+			<div style="border-top: 3px solid; color: rgb(146 64 14)"></div>
+			<div id="shloka_eng_container" class="my-5 font-mono">
+				<div class="text-amber-800 font-extrabold underline" style="font-size: x-large">
+					translation
+				</div>
+				<span id="placeholder_english" style="font-size: small"></span>
+			</div>
+			<div style="border-top: 3px solid; color: rgb(146 64 14)"></div>
+		</div>
+		<script>
+			loadGitaShloka();
+		</script>
+	</body>
+</html>

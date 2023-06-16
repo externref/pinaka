@@ -1,4 +1,6 @@
 export enum Endpoints {
 	home = "/",
-	bhagwadgita = "/bhagwadgita/:adhyaya/:shloka",
+	bhagavadgita = "/api/v1/bhagavadgita/:adhyaya/:shloka",
+	bhagavadgita_home = "/bhagavadgita",
+	bhagavadgita_shloka = "/bhagavadgita/:adhyaya/:shloka",
 }

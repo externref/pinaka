@@ -1,1 +1,4 @@
 node_modules/
+static/js/*.js
+.env
+.space
