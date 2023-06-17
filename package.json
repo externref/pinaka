@@ -7,6 +7,9 @@
 	"author": "externref",
 	"license": "MIT",
 	"private": false,
+	"scripts": {
+		"deploy": "yarn tsc; yarn src/index.js"
+	},
 	"dependencies": {
 		"@types/express": "^4.17.17",
 		"@types/pg": "^8.10.2",

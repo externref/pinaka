@@ -8,7 +8,9 @@
 }
 
 #gitabanner {
-	color: #92400e;
 	font-size: 60px;
 	font-family: "samarkan", sans-serif;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
 }
