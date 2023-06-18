@@ -11,28 +11,40 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="/static/js/gita.js"></script>
 		<link rel="stylesheet" href="/static/css/global.css" />
+
+		<meta content="vedic" property="og:title" />
+		<meta content="a vedic text querying website + API." property="og:description" />
+		<meta content="." property="og:url" />
+		<meta content="https://i.imgur.com/aEHgSqy.png" property="og:image" />
+		<meta content="#ff7722" data-react-helmet="true" name="theme-color" />
+		<meta name="twitter:card" content="summary_large_image" />
 	</head>
 
-	<body class="bg-yellow-200">
+	<body class="bg-slate-900 text-yellow-100">
 		<header class="" , style="background-color: #ff7722">
 			<div class="vedicfont text-white ml-6" , style="font-size: 47px">vedic</div>
 		</header>
 		<img
 			src="/static/images/gita_banner_text.png"
-			width="600"
+			width="90%"
 			class="mt-10"
 			style="margin-left: 5%"
 		/>
-		<div id="shloka_container" class="mx-10 mt-10">
+		<div id="shloka_container" class="mx-10 mt-10 font-mono">
 			<div id="shloka_info_container" class="text-amber-800 font-bold">
 				अध्याय: <span id="placeholder_adhyaya"></span> , श्लोक:
-				<span id="placeholder_shloka"></span>
+				<span id="placeholder_shloka"></span> , speaker: <span id="placeholder_speaker"></span>
 			</div>
 
 			<div style="border-top: 2px solid; color: #92400e"></div>
-			<div id="shloka_orig_container" class="my-5">
+			<div id="shloka_orig_container" class="mt-5">
 				<div class="text-amber-800 font-extrabold" style="font-size: x-large">श्लोक</div>
 				<span id="placeholder_original"></span>
+			</div>
+			<br />
+			<div id="shloka_romanised_container" class="mb-5">
+				<div class="text-amber-800 font-extrabold" style="font-size: x-large">shloka</div>
+				<span id="placeholder_romanised"></span>
 			</div>
 			<div style="border-top: 3px solid; color: rgb(146 64 14)"></div>
 			<div id="shloka_hindi_container" class="my-5">
