@@ -25,6 +25,7 @@ app.get(Endpoints.bhagavadgita_home, (_req: Request, res: Response) => {
 app.get(Endpoints.bhagavadgita_shloka, (_req: Request, res: Response) => {
 	res.sendFile("static/templates/gitashloka.html", { root: "./" });
 });
+
 app.post(Endpoints.insert_gita_shloka, async (req: Request, res: Response) => {
 	if (JSON.parse(req.body).password != process.env.ADMIN_PASS) {
 		return res.sendStatus(403);
@@ -32,3 +33,4 @@ app.post(Endpoints.insert_gita_shloka, async (req: Request, res: Response) => {
 	await database.addGitaShloka(JSON.parse(req.body));
 	res.sendStatus(200);
 });
+app.post(Endpoints.create_account);
