@@ -48,6 +48,7 @@ export class Database {
 	 * @param {Shloka} data the shloka data to add to database.
 	 */
 	async addGitaShloka(data: Shloka) {
+		console.log("here");
 		await this.pool.query(
 			`
 			
@@ -64,5 +65,6 @@ export class Database {
 				data.english,
 			]
 		);
+		console.log("done!");
 	}
 }

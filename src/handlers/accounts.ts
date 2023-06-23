@@ -10,7 +10,7 @@ class AccountHandler {
 		this.database = database;
 	}
 
-    async createAccount(req:Request,res:Response ){
-        let query = await this.database.pool.query(``)
-    }
+	async createAccount(req: Request, res: Response) {
+		let query = await this.database.pool.query(``);
+	}
 }

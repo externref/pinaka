@@ -1,19 +1,19 @@
 site_name: ॐ vedic | docs
 site_url: https://example.com/
 theme:
-  name: material
-  palette:
-    primary: custom
-    scheme: slate
+   name: material
+   palette:
+      primary: custom
+      scheme: slate
 
 nav:
-    - index.md
-    - bhagavad gita: gita.md
+   - index.md
+   - bhagavad gita: gita.md
 
 extra_css:
-  - stylesheets/extra.css
+   - stylesheets/extra.css
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+   - admonition
+   - pymdownx.details
+   - pymdownx.superfences
