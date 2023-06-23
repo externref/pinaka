@@ -3,12 +3,14 @@ import { Endpoints } from "./endpoints";
 import { GitaHandler } from "./handlers/gita";
 import { Database } from "./database";
 import bodyParser from "body-parser";
+
 export const app: Express = express();
 export const database = new Database();
 export const gitaHandler = new GitaHandler(database);
 
 app.use("/static", express.static("static"));
 app.use(bodyParser.json());
+
 app.get(Endpoints.home, (_req: Request, res: Response) => {
 	res.sendFile("static/templates/home.html", { root: "./" });
 });

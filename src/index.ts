@@ -21,6 +21,6 @@ export const logger = winston.createLogger({
 });
 
 app.listen(8000, async () => {
-	await database.pool.connect();
+	await database.setup();
 	logger.info("Started listening on port 8000");
 });
