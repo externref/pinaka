@@ -1,9 +1,10 @@
 import express, { Express, Request, Response } from "express";
 import { Endpoints } from "./endpoints";
-import { GitaHandler, GitaQuery } from "./handlers/gita";
+import { GitaHandler, GitaQuery, numShlokas } from "./handlers/gita";
 import { Database } from "./database";
 import bodyParser from "body-parser";
 import { AccountHandler, UserInter } from "./handlers/accounts";
+import { logger } from ".";
 
 export const app: Express = express();
 export const database = new Database();
@@ -20,8 +21,15 @@ app.get(Endpoints.home, (_req: Request, res: Response) => {
 app.get(Endpoints.bhagavadgita, async (req: Request, res: Response) => {
 	let adhyaya: string = req.params.adhyaya;
 	let shloka: string = req.params.shloka;
-
-	res.send(await gitaHandler.getShloka(parseInt(adhyaya), parseInt(shloka)));
+	if (shloka > numShlokas[adhyaya]) {
+		return res.sendStatus(404);
+	}
+	try {
+		res.send(await gitaHandler.getShloka(parseInt(adhyaya), parseInt(shloka)));
+	} catch (err) {
+		res.status(108).send("Under development");
+		logger.error(err);
+	}
 });
 app.get(Endpoints.bhagavadgita_home, (_req: Request, res: Response) => {
 	res.sendFile("static/templates/gita.html", { root: "./" });
@@ -41,5 +49,5 @@ app.post(Endpoints.create_account, (req: Request<UserInter>, res: Response) => {
 	accountHandler.createAccount(req, res);
 });
 app.post(Endpoints.bhagavadgita_query, (req: Request<GitaQuery>, res: Response) => {
-	gitaHandler.query(req, res)
-})
+	gitaHandler.query(req, res);
+});

@@ -2,6 +2,27 @@ import { Request, Response } from "express";
 import { Database } from "../database";
 import { DBCache } from "../utils";
 
+export const numShlokas = {
+	1: 47,
+	2: 72,
+	3: 43,
+	4: 42,
+	5: 29,
+	6: 47,
+	7: 30,
+	8: 28,
+	9: 34,
+	10: 42,
+	11: 55,
+	12: 20,
+	13: 35,
+	14: 27,
+	15: 20,
+	16: 24,
+	17: 28,
+	18: 78,
+};
+
 export interface Shloka {
 	adhyaya: Number;
 	shloka: Number;
@@ -12,10 +33,10 @@ export interface Shloka {
 	english: String;
 }
 
-export interface GitaQuery{
-	query: string,
-	before: number | undefined,
-	after: number | undefined
+export interface GitaQuery {
+	query: string;
+	before: number | undefined;
+	after: number | undefined;
 }
 
 /**
@@ -50,9 +71,14 @@ export class GitaHandler {
 		}
 	}
 
-	async query(req: Request<GitaQuery>, res: Response){
-		/**
-		 * TODO
-		 */
+	async query(req: Request<GitaQuery>, res: Response) {
+		let query = this.database.pool.query(
+			`
+			SELECT * FROM bhagavadgita
+			WHERE ($1 IN original OR $1 IN romanised)
+			AND adhyaya > $2 AND adhyaya < $3
+			`,
+			[req.body.query, req.body.after, req.body.before]
+		);
 	}
 }
