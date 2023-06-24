@@ -6,7 +6,6 @@
 ![](https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white)
 ![](https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white)
 ![](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
-
 [![wakatime](https://wakatime.com/badge/user/91b4defa-58b1-4cc7-8a36-6ec947f61823/project/2252ad71-2553-4587-8d8d-78564f064482.svg?style=for-the-badge)](https://wakatime.com/@externref/projects/wzfykzprge)
 
 vedic is a simple API + website for querying sanatana literature including vedas, itihasas and other religious texts.
