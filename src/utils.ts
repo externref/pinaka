@@ -8,3 +8,11 @@ export class DBCache<V> {
 		return this.colllection[key];
 	}
 }
+
+export function createSnowflake(): bigint {
+	return BigInt("");
+}
+
+export function createAccessToken(): string {
+	return "";
+}

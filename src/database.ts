@@ -26,6 +26,17 @@ export class Database {
             )
             `
 		);
+		await this.pool.query(
+			`
+			CREATE TABLE IF NOT EXISTS users (
+				user_id BIGINT NOT NULL, 
+				username VARHCAR NOT NULL, 
+				display_name VARCHAR NOT NULL,
+				password VARCHAR NOT NULL,
+				access_token VARCHAR NOT NUL
+			)
+			`
+		);
 	}
 	/**
 	 * Get's a gita query from database.
@@ -48,10 +59,8 @@ export class Database {
 	 * @param {Shloka} data the shloka data to add to database.
 	 */
 	async addGitaShloka(data: Shloka) {
-		console.log("here");
 		await this.pool.query(
 			`
-			
 			INSERT INTO bhagavadgita
 			VALUES ($1, $2, $3, $4, $5, $6, $7)
 			`,
@@ -65,6 +74,5 @@ export class Database {
 				data.english,
 			]
 		);
-		console.log("done!");
 	}
 }

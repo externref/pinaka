@@ -1,3 +1,4 @@
+import { Request, Response } from "express";
 import { Database } from "../database";
 import { DBCache } from "../utils";
 
@@ -9,6 +10,12 @@ export interface Shloka {
 	romanised: String;
 	hindi: String;
 	english: String;
+}
+
+export interface GitaQuery{
+	query: string,
+	before: number | undefined,
+	after: number | undefined
 }
 
 /**
@@ -41,5 +48,11 @@ export class GitaHandler {
 			this.cache.push(`${_shloka.adhyaya}_${_shloka.shloka}`, _shloka);
 			return _shloka;
 		}
+	}
+
+	async query(req: Request<GitaQuery>, res: Response){
+		/**
+		 * TODO
+		 */
 	}
 }

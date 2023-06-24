@@ -1,12 +1,14 @@
 import express, { Express, Request, Response } from "express";
 import { Endpoints } from "./endpoints";
-import { GitaHandler } from "./handlers/gita";
+import { GitaHandler, GitaQuery } from "./handlers/gita";
 import { Database } from "./database";
 import bodyParser from "body-parser";
+import { AccountHandler, UserInter } from "./handlers/accounts";
 
 export const app: Express = express();
 export const database = new Database();
 export const gitaHandler = new GitaHandler(database);
+export const accountHandler = new AccountHandler(database);
 
 app.use("/static", express.static("static"));
 app.use(bodyParser.json());
@@ -35,4 +37,9 @@ app.post(Endpoints.insert_gita_shloka, async (req: Request, res: Response) => {
 	await database.addGitaShloka(req.body);
 	res.sendStatus(200);
 });
-app.post(Endpoints.create_account, (req: Request, res: Response) => {});
+app.post(Endpoints.create_account, (req: Request<UserInter>, res: Response) => {
+	accountHandler.createAccount(req, res);
+});
+app.post(Endpoints.bhagavadgita_query, (req: Request<GitaQuery>, res: Response) => {
+	gitaHandler.query(req, res)
+})

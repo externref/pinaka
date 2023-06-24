@@ -14,7 +14,7 @@ Shlokas of the Bhagavad Gita are stored as *Shloka* objects.
         "shloka": 0,
         "speaker": "the speaker of the shloka",
         "original": "the actual shloka",
-        "romainised": "romanised version of the shloka",
+        "romanised": "romanised version of the shloka",
         "hindi": "hindi translation of the shloka",
         "english": "english translation of the shloka"
     }
@@ -57,7 +57,7 @@ If no data for the requested values are found a `404` status is returned.
         # shloka class data as keys and values
     ```
 
-    **typescript**
+    **typescript:**
     ```typescript
     const req = new XMLHttpRequest()
     req.open("GET", "<core endpoint>/bhagavadgita/1/1")
@@ -71,3 +71,6 @@ If no data for the requested values are found a `404` status is returned.
     }
     req.send()
     ```
+
+### querying the gita
+* Endpoint: `/api/v1/bhagavadgita/query`
