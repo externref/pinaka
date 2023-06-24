@@ -33,7 +33,7 @@ export class Database {
 				username VARHCAR NOT NULL, 
 				display_name VARCHAR NOT NULL,
 				password VARCHAR NOT NULL,
-				access_token VARCHAR NOT NUL
+				access_token VARCHAR NOT NULL
 			)
 			`
 		);
