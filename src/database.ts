@@ -30,7 +30,7 @@ export class Database {
 			`
 			CREATE TABLE IF NOT EXISTS users (
 				user_id BIGINT NOT NULL, 
-				username VARHCAR NOT NULL, 
+				username VARCHAR NOT NULL, 
 				display_name VARCHAR NOT NULL,
 				password VARCHAR NOT NULL,
 				access_token VARCHAR NOT NULL
