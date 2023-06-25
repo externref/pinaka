@@ -74,3 +74,14 @@ If no data for the requested values are found a `404` status is returned.
 
 ### querying the gita
 * Endpoint: `/api/v1/bhagavadgita/query`
+
+fetches multiple shlokas from the API and returns them as a list of Shlokas.
+
+#### PARAMETERS
+
+
+| Param    | Info                                         | Dtype |
+| :--------| :------------------------------------------- | :---- |
+| adhyaya  | Adhyaya from which shlokas are to be fetched | int   |
+| from     | The shloka number to start fetching from.    | int   |
+| to       | The shloka number to stop querying on.       | int   |

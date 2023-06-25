@@ -34,9 +34,9 @@ export interface Shloka {
 }
 
 export interface GitaQuery {
-	query: string;
-	before: number | undefined;
-	after: number | undefined;
+	adhyaya: number,
+	from: number, 
+	to: number
 }
 
 /**
@@ -72,13 +72,17 @@ export class GitaHandler {
 	}
 
 	async query(req: Request<GitaQuery>, res: Response) {
-		let query = this.database.pool.query(
+		let query = await this.database.pool.query<Shloka>(
 			`
 			SELECT * FROM bhagavadgita
-			WHERE ($1 IN original OR $1 IN romanised)
-			AND adhyaya > $2 AND adhyaya < $3
+			WHERE adhyaya = $1 AND
+			AND shlokas> $2 AND shloka < $3
 			`,
-			[req.body.query, req.body.after, req.body.before]
+			[req.body.adhyaya, req.body.from, req.body.to]
 		);
+		res.send(
+			query.rows
+		)
+
 	}
 }
