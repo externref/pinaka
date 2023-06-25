@@ -57,8 +57,8 @@ If no data for the requested values are found a `404` status is returned.
         # shloka class data as keys and values
     ```
 
-    **typescript:**
-    ```typescript
+    **embedded js**
+    ```javascript
     const req = new XMLHttpRequest()
     req.open("GET", "<core endpoint>/bhagavadgita/1/1")
     req.onload = () => {
@@ -85,3 +85,32 @@ fetches multiple shlokas from the API and returns them as a list of Shlokas.
 | adhyaya  | Adhyaya from which shlokas are to be fetched | int   |
 | from     | The shloka number to start fetching from.    | int   |
 | to       | The shloka number to stop querying on.       | int   |
+
+??? examples
+    **python**
+    ```python
+    import requests
+
+    res = requests.post(
+        "<core endpoint>/bhagavadgita/query", json={"adhyaya": 1, "from": 1, "to": 5}
+    )
+    res.raise_for_status()
+    data = res.json() # data var stores a list of shloka dictionaries.
+    ```
+    **typescript**
+    ```typescript
+    import axios from "axios";
+
+    const main = async ()=>{
+        var res =  await axios.post("http://localhost:8000/api/v1/bhagavadgita/query",{
+        adhyaya: 1, from: 1, to:5
+    })
+        const data = res.data 
+        // data stores Shloka objects in an array
+    }
+
+    main()
+    ```
+
+
+

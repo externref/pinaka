@@ -70,13 +70,17 @@ export class GitaHandler {
 			return _shloka;
 		}
 	}
-
+	/**
+	 * 
+	 * @param {Request<GitaQuery>} req the request to process.
+	 * @param {Response} res the response handler to use.
+	 */
 	async query(req: Request<GitaQuery>, res: Response) {
 		let query = await this.database.pool.query<Shloka>(
 			`
 			SELECT * FROM bhagavadgita
 			WHERE adhyaya = $1 AND
-			AND shlokas> $2 AND shloka < $3
+		    shloka> $2 AND shloka < $3
 			`,
 			[req.body.adhyaya, req.body.from, req.body.to]
 		);

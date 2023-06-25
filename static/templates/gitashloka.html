@@ -69,30 +69,8 @@
 				<option value="28">28:</option>
 			</select>
 		</div>
-		<img
-			src="/static/images/gita_banner_text.png"
-			width="90%"
-			class="mt-10"
-			style="margin-left: 5%"
-		/>
-		<div id="navigator" class="my-5 mr-10">
-			<div class="inline-flex float-right">
-				<button
-					onclick="navigate(-1)"
-					id="prevbtn"
-					class="bg-orange-600 hover:bg-orange-400 disabled:bg-slate-400 text-white font-bold py-1 pl-2 pr-1 rounded-l"
-				>
-					Previous
-				</button>
-				<button
-					onclick="navigate(1)"
-					id="nxtbtn"
-					style="margin-left: 0.5px"
-					class="bg-orange-600 hover:bg-orange-400 disabled:bg-slate-400 text-white font-bold py-1 pr-2 pl-1 rounded-r"
-				>
-					Next
-				</button>
-			</div>
+		
+		
 		</div>
 		<div id="shloka_container" class="mx-10 mt-10 font-mono">
 			<div id="shloka_info_container" class="text-amber-800 font-bold">
@@ -121,6 +99,24 @@
 			</div>
 			<div style="border-top: 3px solid; color: rgb(146 64 14)"></div>
 		</div>
+		<div id="navigator" class="my-5 mr-10">
+			<div class="inline-flex float-right">
+				<button
+					onclick="navigate(-1)"
+					id="prevbtn"
+					class="bg-orange-600 hover:bg-orange-400 disabled:bg-slate-400 text-white font-bold py-1 pl-2 pr-1 rounded-l"
+				>
+					Previous
+				</button>
+				<button
+					onclick="navigate(1)"
+					id="nxtbtn"
+					style="margin-left: 0.5px"
+					class="bg-orange-600 hover:bg-orange-400 disabled:bg-slate-400 text-white font-bold py-1 pr-2 pl-1 rounded-r"
+				>
+					Next
+				</button>
+			</div>
 		<script>
 			loadGitaShloka();
 		</script>
