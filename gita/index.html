@@ -235,6 +235,15 @@ md-nav__item--active">
 </li>  <li class="md-nav__item">
 	<a href="#querying-the-gita" class="md-nav__link"> querying the gita </a>
 	
+	<nav class="md-nav" aria-label="querying the gita">
+		<ul class="md-nav__list">
+			 <li class="md-nav__item">
+	<a href="#parameters" class="md-nav__link"> PARAMETERS </a>
+	
+</li> 
+		</ul>
+	</nav>
+	
 </li> 
 		</ul>
 	</nav>
@@ -274,6 +283,15 @@ md-nav__item--active">
 	
 </li>  <li class="md-nav__item">
 	<a href="#querying-the-gita" class="md-nav__link"> querying the gita </a>
+	
+	<nav class="md-nav" aria-label="querying the gita">
+		<ul class="md-nav__list">
+			 <li class="md-nav__item">
+	<a href="#parameters" class="md-nav__link"> PARAMETERS </a>
+	
+</li> 
+		</ul>
+	</nav>
 	
 </li> 
 		</ul>
@@ -346,7 +364,7 @@ If no data for the requested values are found a <code>404</code> status is retur
     <span class="c1"># the shloka_data is now a dictionary that contains all the </span>
     <span class="c1"># shloka class data as keys and values</span>
 </code></pre></div></p>
-<p><strong>typescript:</strong>
+<p><strong>embedded js</strong>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">req</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">XMLHttpRequest</span><span class="p">()</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&lt;core endpoint&gt;/bhagavadgita/1/1&quot;</span><span class="p">)</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">onload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
@@ -363,7 +381,60 @@ If no data for the requested values are found a <code>404</code> status is retur
 <h3 id="querying-the-gita">querying the gita</h3>
 <ul>
 <li>Endpoint: <code>/api/v1/bhagavadgita/query</code></li>
-</ul>     
+</ul>
+<p>fetches multiple shlokas from the API and returns them as a list of Shlokas.</p>
+<h4 id="parameters">PARAMETERS</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Param</th>
+<th align="left">Info</th>
+<th align="left">Dtype</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">adhyaya</td>
+<td align="left">Adhyaya from which shlokas are to be fetched</td>
+<td align="left">int</td>
+</tr>
+<tr>
+<td align="left">from</td>
+<td align="left">The shloka number to start fetching from.</td>
+<td align="left">int</td>
+</tr>
+<tr>
+<td align="left">to</td>
+<td align="left">The shloka number to stop querying on.</td>
+<td align="left">int</td>
+</tr>
+</tbody>
+</table>
+<details class="examples">
+<summary>Examples</summary>
+<p><strong>python</strong>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;&lt;core endpoint&gt;/bhagavadgita/query&quot;</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;adhyaya&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+<span class="p">)</span>
+<span class="n">res</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">()</span> <span class="c1"># data var stores a list of shloka dictionaries.</span>
+</code></pre></div>
+<strong>typescript</strong>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">axios</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;axios&quot;</span><span class="p">;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()=&gt;{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">axios</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;http://localhost:8000/api/v1/bhagavadgita/query&quot;</span><span class="p">,{</span>
+<span class="w">    </span><span class="nx">adhyaya</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="p">,</span><span class="w"> </span><span class="nx">from</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="kt">5</span>
+<span class="p">})</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="w"> </span>
+<span class="w">    </span><span class="c1">// data stores Shloka objects in an array</span>
+<span class="p">}</span>
+
+<span class="nx">main</span><span class="p">()</span>
+</code></pre></div></p>
+</details>     
                 
               </article>
             </div>
