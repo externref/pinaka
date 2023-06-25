@@ -24,7 +24,7 @@ documentation: [https://externref.github.io/vedic](https://externref.github.io/v
 any kind of contributions are welcomed! feel free to create an issue and discuss your ideas, or connect through:<br>
 
 discord: [externref](https://discord.com/users/580034015759826944)<br>
-mail: shiva02939@gmail.com"
+mail: shiva02939@gmail.com
 
 ### stack used
 

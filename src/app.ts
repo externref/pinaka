@@ -18,6 +18,16 @@ app.get(Endpoints.home, (_req: Request, res: Response) => {
 	res.sendFile("static/templates/home.html", { root: "./" });
 });
 
+app.get(Endpoints.docs, (_req: Request, res: Response) => {
+	res.redirect("https://externref.github.io/vedic");
+});
+app.get(Endpoints.github, (_req: Request, res: Response) => {
+	res.redirect("https://github.com/externref/vedic");
+});
+app.get(Endpoints.discord, (_req: Request, res: Response) => {
+	res.redirect("https://discord.gg/WabTsHbqFM");
+});
+
 app.get(Endpoints.bhagavadgita, async (req: Request, res: Response) => {
 	let adhyaya: string = req.params.adhyaya;
 	let shloka: string = req.params.shloka;

@@ -3,6 +3,11 @@ export enum Endpoints {
 	create_account = "/dev/createaccount",
 	insert_gita_shloka = "/dev/addshloka",
 
+	// redirects
+	docs = "/docs",
+	discord = "/discord",
+	github = "/github",
+
 	// exposed to user
 	home = "/",
 	bhagavadgita = "/api/v1/bhagavadgita/:adhyaya/:shloka",

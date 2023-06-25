@@ -34,9 +34,9 @@ export interface Shloka {
 }
 
 export interface GitaQuery {
-	adhyaya: number,
-	from: number, 
-	to: number
+	adhyaya: number;
+	from: number;
+	to: number;
 }
 
 /**
@@ -71,7 +71,7 @@ export class GitaHandler {
 		}
 	}
 	/**
-	 * 
+	 *
 	 * @param {Request<GitaQuery>} req the request to process.
 	 * @param {Response} res the response handler to use.
 	 */
@@ -84,9 +84,6 @@ export class GitaHandler {
 			`,
 			[req.body.adhyaya, req.body.from, req.body.to]
 		);
-		res.send(
-			query.rows
-		)
-
+		res.send(query.rows);
 	}
 }
