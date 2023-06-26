@@ -23,7 +23,7 @@ export const numShlokas = {
 	18: 78,
 };
 
-export interface Shloka {
+export interface GitaShloka {
 	adhyaya: Number;
 	shloka: Number;
 	speaker: String;
@@ -52,7 +52,7 @@ export class GitaHandler {
 	/**
 	 * cache for storing data fetched from database.
 	 */
-	cache: DBCache<Shloka> = new DBCache();
+	cache: DBCache<GitaShloka> = new DBCache();
 
 	/**
 	 * gets a shloka from the cache, if not found database lookup is done and
@@ -61,8 +61,8 @@ export class GitaHandler {
 	 * @param {Number} shloka the shloka to look up for.
 	 * @returns {Shloka} data of the shloka.
 	 */
-	async getShloka(adhyaya: Number, shloka: Number): Promise<Shloka> {
-		let _cache_shloka: Shloka | undefined = this.cache.get(`${adhyaya}_${shloka}`);
+	async getShloka(adhyaya: Number, shloka: Number): Promise<GitaShloka> {
+		let _cache_shloka: GitaShloka | undefined = this.cache.get(`${adhyaya}_${shloka}`);
 		if (_cache_shloka != undefined) return _cache_shloka;
 		else {
 			let _shloka = await this.database.getGitaShloka(adhyaya, shloka);
@@ -76,7 +76,7 @@ export class GitaHandler {
 	 * @param {Response} res the response handler to use.
 	 */
 	async query(req: Request<GitaQuery>, res: Response) {
-		let query = await this.database.pool.query<Shloka>(
+		let query = await this.database.pool.query<GitaShloka>(
 			`
 			SELECT * FROM bhagavadgita
 			WHERE adhyaya = $1 AND

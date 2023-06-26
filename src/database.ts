@@ -1,6 +1,6 @@
 import { Pool } from "pg";
 import dotenv from "dotenv";
-import { Shloka } from "./handlers/gita";
+import { GitaShloka } from "./handlers/gita";
 dotenv.config();
 
 const connectionString = process.env.PGSQL_URI;
@@ -37,6 +37,18 @@ export class Database {
 			)
 			`
 		);
+		await this.pool.query(
+			`
+			CREATE TABLE IF NOT EXISTS shivtandava (
+				khand INT NOT NULL, 
+				shloka INT NOT NULL,
+				original VARCHAR NOT NULL,
+				romanised VARCHAR NOT NULL, 
+				hindi VARCHAR NOT NULL, 
+				english VARCHAR NOT NULL
+			)
+			`
+		);
 	}
 	/**
 	 * Get's a gita query from database.
@@ -44,7 +56,7 @@ export class Database {
 	 * @param {Number} shloka the number of shloka.
 	 * @returns {Promise<Shloka>}
 	 */
-	async getGitaShloka(adhyaya: Number, shloka: Number): Promise<Shloka> {
+	async getGitaShloka(adhyaya: Number, shloka: Number): Promise<GitaShloka> {
 		let query = await this.pool.query(
 			`
             SELECT * FROM bhagavadgita 
@@ -58,7 +70,7 @@ export class Database {
 	 * adds a gita shloka to the database.
 	 * @param {Shloka} data the shloka data to add to database.
 	 */
-	async addGitaShloka(data: Shloka) {
+	async addGitaShloka(data: GitaShloka) {
 		await this.pool.query(
 			`
 			INSERT INTO bhagavadgita

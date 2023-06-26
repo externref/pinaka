@@ -1,7 +1,8 @@
 export enum Endpoints {
 	// for dev purpose
 	create_account = "/dev/createaccount",
-	insert_gita_shloka = "/dev/addshloka",
+	insert_gita_shloka = "/dev/addgitashloka",
+	insert_tandava_shloka = "/dev/addtandavashloka",
 
 	// redirects
 	docs = "/docs",
