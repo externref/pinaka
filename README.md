@@ -1,4 +1,5 @@
 # vedic
+
 ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
@@ -17,8 +18,6 @@ the API is under development and quite unstable, documentation is updated regula
 preview deployment: [https://vedic.up.railway.app](https://vedic.up.railway.app)<br>
 documentation: [https://externref.github.io/vedic](https://externref.github.io/vedic)
 
-
-
 ### contributions
 
 any kind of contributions are welcomed! feel free to create an issue and discuss your ideas, or connect through:<br>
@@ -35,7 +34,6 @@ nodejs with typescript extension is used for backend. the webserver uses `expres
 #### frontend
 
 raw html with `tailwindcss` is used.
-
 
 #### documentation
 

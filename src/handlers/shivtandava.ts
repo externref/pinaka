@@ -1,4 +1,3 @@
-import { QueryResult } from "pg";
 import { Database } from "../database";
 import { Request, Response } from "express";
 

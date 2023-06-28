@@ -41,12 +41,6 @@ app.get(Endpoints.bhagavadgita, async (req: Request, res: Response) => {
 		logger.error(err);
 	}
 });
-app.get(Endpoints.bhagavadgita_home, (_req: Request, res: Response) => {
-	res.sendFile("static/templates/gita.html", { root: "./" });
-});
-app.get(Endpoints.bhagavadgita_shloka, (_req: Request, res: Response) => {
-	res.sendFile("static/templates/gitashloka.html", { root: "./" });
-});
 
 app.post(Endpoints.insert_gita_shloka, async (req: Request, res: Response) => {
 	if (req.body.password != process.env.ADMIN_PASS) {
