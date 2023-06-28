@@ -25,16 +25,6 @@ any kind of contributions are welcomed! feel free to create an issue and discuss
 discord: [externref](https://discord.com/users/580034015759826944)<br>
 mail: shiva02939@gmail.com
 
-### stack used
-
-#### backend
-
-nodejs with typescript extension is used for backend. the webserver uses `express-js` for the REST api along with `postgresql` as a database.
-
-#### frontend
-
-raw html with `tailwindcss` is used.
-
 #### documentation
 
 documentation built with `mkdocs` is hosted on github pages.
