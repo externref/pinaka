@@ -6,7 +6,11 @@ import bodyParser from "body-parser";
 import { AccountHandler, UserInter } from "./handlers/accounts";
 import { logger } from ".";
 
-export const app: Express = express();
+export const app: Express = express( headers: {
+    'Access-Control-Allow-Origin': '*', // Set the desired allowed origin or '*' to allow all origins
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE', // Set the allowed HTTP methods
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Set the allowed request headers
+  },);
 export const database = new Database();
 export const gitaHandler = new GitaHandler(database);
 export const accountHandler = new AccountHandler(database);
