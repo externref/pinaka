@@ -5,19 +5,21 @@ import { Database } from "./database";
 import bodyParser from "body-parser";
 import { AccountHandler, UserInter } from "./handlers/accounts";
 import { logger } from ".";
+import cors from "cors";
 
-export const app: Express = express( headers: {
-    'Access-Control-Allow-Origin': '*', // Set the desired allowed origin or '*' to allow all origins
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE', // Set the allowed HTTP methods
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Set the allowed request headers
-  },);
+export const app: Express = express();
 export const database = new Database();
 export const gitaHandler = new GitaHandler(database);
 export const accountHandler = new AccountHandler(database);
 
 app.use("/static", express.static("static"));
 app.use(bodyParser.json());
-
+app.use(
+	cors({
+		origin: "*",
+		methods: ["GET", "POST", "PUT", "DELETE"],
+	})
+);
 app.get(Endpoints.home, (_req: Request, res: Response) => {
 	res.sendFile("static/templates/home.html", { root: "./" });
 });
