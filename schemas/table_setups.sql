@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS users (
     display_name VARCHAR NOT NULL,
     avatar VARCHAR NOT NULL,
     passwd VARCHAR NOT NULL,
-    access_token VARCHAR NOT NULL
+    access_token VARCHAR NOT NULL,
     current_login_token VARCHAR 
 );
 
