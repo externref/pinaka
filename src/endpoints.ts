@@ -1,6 +1,8 @@
 export enum Endpoints {
 	// for dev purpose
 	create_account = "/dev/createaccount",
+	verify_login = "/dev/authenticate",
+	verify_cookie = "/dev/validate_cookie",
 	insert_gita_shloka = "/dev/addgitashloka",
 	insert_tandava_shloka = "/dev/addtandavashloka",
 

@@ -2,7 +2,6 @@ import { Database } from "../database";
 import { Request, Response } from "express";
 
 export interface TandavaShloka {
-	khand: number;
 	shloka: number;
 	original: string;
 	romanised: string;
@@ -40,16 +39,9 @@ export class TandavaHandler {
 		await this.database.pool.query(
 			`
 			INSERT INTO shivtandava
-			($1, $2, $3, $4, $5, $6)
+			($1, $2, $3, $4, $5)
 			`,
-			[
-				shloka.khand,
-				shloka.shloka,
-				shloka.original,
-				shloka.romanised,
-				shloka.hindi,
-				shloka.english,
-			]
+			[shloka.shloka, shloka.original, shloka.romanised, shloka.hindi, shloka.english]
 		);
 		res.sendStatus(200);
 	}

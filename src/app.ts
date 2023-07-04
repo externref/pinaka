@@ -3,7 +3,7 @@ import { Endpoints } from "./endpoints";
 import { GitaHandler, GitaQuery, numShlokas } from "./handlers/gita";
 import { Database } from "./database";
 import bodyParser from "body-parser";
-import { AccountHandler, UserInter } from "./handlers/accounts";
+import { AccountHandler, LoginAttempt, UserInter } from "./handlers/accounts";
 import { logger } from ".";
 import cors from "cors";
 
@@ -34,6 +34,18 @@ app.get(Endpoints.discord, (_req: Request, res: Response) => {
 	res.redirect("https://discord.gg/WabTsHbqFM");
 });
 
+app.post(Endpoints.create_account, (req: Request<UserInter>, res: Response) => {
+	accountHandler.createAccount(req, res);
+});
+
+app.post(Endpoints.verify_login, (req: Request<LoginAttempt>, res) => {
+	accountHandler.verifyLogin(req, res);
+});
+
+app.post(Endpoints.verify_cookie, (req: Request, res: Response) => {
+	accountHandler.verifyCookie(req, res);
+});
+
 app.get(Endpoints.bhagavadgita, async (req: Request, res: Response) => {
 	let adhyaya: string = req.params.adhyaya;
 	let shloka: string = req.params.shloka;
@@ -54,9 +66,6 @@ app.post(Endpoints.insert_gita_shloka, async (req: Request, res: Response) => {
 	}
 	await database.addGitaShloka(req.body);
 	res.sendStatus(200);
-});
-app.post(Endpoints.create_account, (req: Request<UserInter>, res: Response) => {
-	accountHandler.createAccount(req, res);
 });
 app.post(Endpoints.bhagavadgita_query, (req: Request<GitaQuery>, res: Response) => {
 	gitaHandler.query(req, res);

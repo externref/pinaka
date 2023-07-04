@@ -3,7 +3,7 @@
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 		"downlevelIteration": true,
-		"target": "ES2017",
+		"target": "ES2022",
 		"module": "commonjs",
 		"sourceMap": true
 	}

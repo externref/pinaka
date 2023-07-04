@@ -9,7 +9,15 @@ export class Database {
 	pool: Pool;
 
 	constructor() {
-		this.pool = new Pool({ connectionString });
+		this.pool = connectionString
+			? new Pool({ connectionString })
+			: new Pool({
+					host: "localhost",
+					port: 5432,
+					user: "postgres",
+					password: "sarthak",
+					database: "postgres",
+			  });
 	}
 
 	async setup() {
@@ -32,15 +40,16 @@ export class Database {
 				user_id BIGINT NOT NULL, 
 				username VARCHAR NOT NULL, 
 				display_name VARCHAR NOT NULL,
-				password VARCHAR NOT NULL,
-				access_token VARCHAR NOT NULL
-			)
+				avatar VARCHAR NOT NULL,
+				passwd VARCHAR NOT NULL,
+				access_token VARCHAR NOT NULL,
+				current_login_token VARCHAR 
+			);		
 			`
 		);
 		await this.pool.query(
 			`
 			CREATE TABLE IF NOT EXISTS shivtandava (
-				khand INT NOT NULL, 
 				shloka INT NOT NULL,
 				original VARCHAR NOT NULL,
 				romanised VARCHAR NOT NULL, 
