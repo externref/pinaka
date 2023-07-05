@@ -14,12 +14,7 @@ export const accountHandler = new AccountHandler(database);
 
 app.use("/static", express.static("static"));
 app.use(bodyParser.json());
-app.use(
-	cors({
-		origin: "*",
-		methods: ["GET", "POST", "PUT", "DELETE"],
-	})
-);
+app.use(cors());
 app.get(Endpoints.home, (_req: Request, res: Response) => {
 	res.sendFile("static/templates/home.html", { root: "./" });
 });
