@@ -52,7 +52,7 @@ If no data for the requested values are found a `404` status is returned.
     if response.status_code == 404:
         print("No data found.")
     else:
-        shloka_data: dict[str, str|int] = response.json()
+        shloka_data: typing.Dict[str, str|int] = response.json()
         # the shloka_data is now a dictionary that contains all the 
         # shloka class data as keys and values
     ```

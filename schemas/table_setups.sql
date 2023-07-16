@@ -8,6 +8,14 @@ CREATE TABLE IF NOT EXISTS bhagavadgita (
     english VARCHAR NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS shivtandava (
+    shloka INT NOT NULL,
+    original VARCHAR NOT NULL,
+    romanised VARCHAR NOT NULL, 
+    hindi VARCHAR NOT NULL, 
+    english VARCHAR NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS users (
     user_id BIGINT NOT NULL, 
     username VARCHAR NOT NULL, 
@@ -17,11 +25,3 @@ CREATE TABLE IF NOT EXISTS users (
     access_token VARCHAR NOT NULL,
     current_login_token VARCHAR 
 );
-
-CREATE TABLE IF NOT EXISTS shivtandava (
-    shloka INT NOT NULL,
-    original VARCHAR NOT NULL,
-    romanised VARCHAR NOT NULL, 
-    hindi VARCHAR NOT NULL, 
-    english VARCHAR NOT NULL
-)

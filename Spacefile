@@ -1,0 +1,13 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: vedic
+    src: ./
+    engine: python3.9
+    primary: true
+    run: uvicorn main:app
+    public_routes:
+      - "/*"
+    presets:
+      env:
+        - name: PGSQL_URL
