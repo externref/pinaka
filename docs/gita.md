@@ -3,8 +3,6 @@
    width="90%"
   />
 
-**Core endpoint**: `/api/v1/bhagavadgita`
-
 Shlokas of the Bhagavad Gita are stored as *Shloka* objects.
 
 ???+ example "structure of a Shloka object"
@@ -21,23 +19,23 @@ Shlokas of the Bhagavad Gita are stored as *Shloka* objects.
     ```
 
 ??? question "view in source"
-    ```ts
-    export interface Shloka {
-        adhyaya: Number;
-        shloka: Number;
-        speaker: String;
-        original: String;
-        romanised: String;
-        hindi: String;
-        english: String;
-    }
+    ```py
+    @attrs.define(kw_only=True)
+    class Shloka:
+        adhyaya: int
+        shloka: int
+        speaker: str
+        original: str
+        romanised: str
+        english: str
+        hindi: str
     ```
 
 Endpoints
 ---------
 
 ### fetching a shloka
-* Endpoint: `/api/v1/bhagavadgita/:adhyaya/:shloka`
+* Endpoint: `/bhagavadgita/{adhyaya}/{shloka}`
 
 Fetches the shloka number from the provided adhyaya number, the shloka and adhyaya number must be positive integer values.
 If no data for the requested values are found a `404` status is returned.
@@ -73,7 +71,7 @@ If no data for the requested values are found a `404` status is returned.
     ```
 
 ### querying the gita
-* Endpoint: `/api/v1/bhagavadgita/query`
+* Endpoint: `/bhagavadgita/query`
 
 fetches multiple shlokas from the API and returns them as a list of Shlokas.
 
@@ -83,8 +81,8 @@ fetches multiple shlokas from the API and returns them as a list of Shlokas.
 | Param    | Info                                         | Dtype |
 | :--------| :------------------------------------------- | :---- |
 | adhyaya  | Adhyaya from which shlokas are to be fetched | int   |
-| from     | The shloka number to start fetching from.    | int   |
-| to       | The shloka number to stop querying on.       | int   |
+| range    | Range of shlokas to be fetched               | [int, int]   |
+| shlokas  | The shloka number of the shlokas to fetch    | [int, ...]   |
 
 ??? examples
     **python**
@@ -92,7 +90,7 @@ fetches multiple shlokas from the API and returns them as a list of Shlokas.
     import requests
 
     res = requests.post(
-        "<core endpoint>/bhagavadgita/query", json={"adhyaya": 1, "from": 1, "to": 5}
+        "<core endpoint>/bhagavadgita/query", json={"adhyaya": 1, "range": [1, 5]}
     )
     res.raise_for_status()
     data = res.json() # data var stores a list of shloka dictionaries.
@@ -102,8 +100,8 @@ fetches multiple shlokas from the API and returns them as a list of Shlokas.
     import axios from "axios";
 
     const main = async ()=>{
-        var res =  await axios.post("http://localhost:8000/api/v1/bhagavadgita/query",{
-        adhyaya: 1, from: 1, to:5
+        var res =  await axios.post("<core endpoint>/bhagavadgita/query",{
+        adhyaya: 1, shlokas: [1, 3, 4, 9]
     })
         const data = res.data 
         // data stores Shloka objects in an array

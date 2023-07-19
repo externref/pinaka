@@ -29,14 +29,18 @@ app = fastapi.FastAPI(lifespan=setups)
 
 
 @app.get(endp._INDEX)
-def api_info() -> typing.Dict[str, typing.Union[str, int]]:
-    return models.APIInfo(version=__version__).to_payload()
+def api_info() -> typing.Dict[str, typing.Union[str, int, typing.List[str]]]:
+    return models.APIInfo(
+        version=__version__, paths=[route.path for route in app.routes if isinstance(route, fastapi.routing.APIRoute)],
+        discord="https://discord.gg/aFqaUbKKx4",
+        github="https://github.com/externref/"
+    ).to_payload()
 
 
 @app.get(endp.BHAGAVADGITA_SHLOKA)
 async def get_gita_shloka(res: fastapi.Response, adhyaya: int, shloka: int) -> typing.Dict[str, typing.Union[str, int]]:
     try:
-        shlkcls = await models.Shloka.new(db_pool, adhyaya, shloka)
+        shlkcls = await models.GitaShloka.new(db_pool, adhyaya, shloka)
         return shlkcls.to_payload()
     except ShlokaNotFound as e:
         return fastapi.Response(status_code=404)
@@ -44,7 +48,6 @@ async def get_gita_shloka(res: fastapi.Response, adhyaya: int, shloka: int) -> t
 
 @app.post(endp.BHAGAVADGITA_QUERY)
 async def query_gita(query: models.GitaQuery):
-    print(query.dict())
     return (
         await models.GitaQueryResponse.new(
             db_pool, query.adhyaya, query.dict().get("range"), query.dict().get("shlokas")

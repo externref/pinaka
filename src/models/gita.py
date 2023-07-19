@@ -34,7 +34,7 @@ class ShlokaDict(typing.TypedDict):
 
 
 @attrs.define(kw_only=True)
-class Shloka(AttrsClassToPayload):
+class GitaShloka(AttrsClassToPayload):
     adhyaya: int
     shloka: int
     speaker: str
@@ -58,7 +58,7 @@ class Shloka(AttrsClassToPayload):
         return data  # type: ignore
 
     @classmethod
-    async def new(cls, dbdriver: asyncpg.Pool[asyncpg.Record], adhyaya: int, shloka: int) -> Shloka:
+    async def new(cls, dbdriver: asyncpg.Pool[asyncpg.Record], adhyaya: int, shloka: int) -> GitaShloka:
         base = {
             "adhyaya": adhyaya,
             "shloka": shloka,
@@ -70,10 +70,10 @@ class Shloka(AttrsClassToPayload):
         }
         shloka_dict = cls._attempt_local(adhyaya, shloka) or await cls.fetch(dbdriver, adhyaya, shloka)
         base.update(shloka_dict)
-        return Shloka(**base)
+        return GitaShloka(**base)
 
 
-Shloka._cache = {num: _open_and_fill(num) for num in range(1, 19)}
+GitaShloka._cache = {num: _open_and_fill(num) for num in range(1, 19)}
 
 
 @attrs.define(kw_only=True)
@@ -91,17 +91,17 @@ class GitaQueryResponse(AttrsClassToPayload):
         _range: tuple[int, int] | None = None,
         _shlokas: typing.Tuple[int, ...] | None = None,
     ) -> GitaQueryResponse:
-        shlokas: typing.List[Shloka] = []
+        shlokas: typing.List[GitaShloka] = []
         if _range:
             for i in range(_range[0], _range[1] + 1):
                 try:
-                    shlokas.append(await Shloka.new(dbdriver, adhyaya, i))
+                    shlokas.append(await GitaShloka.new(dbdriver, adhyaya, i))
                 except ShlokaNotFound:
                     pass
         elif _shlokas is not None:
             for shloka in _shlokas:
                 try:
-                    shlokas.append(await Shloka.new(dbdriver, adhyaya, shloka))
+                    shlokas.append(await GitaShloka.new(dbdriver, adhyaya, shloka))
                 except ShlokaNotFound:
                     continue
         return GitaQueryResponse(

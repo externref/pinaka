@@ -1,237 +1,425 @@
 {
 	"1": {
+		"adhyaya": 1,
+		"shloka": 1,
 		"speaker": "dhṛtarāṣṭra (धृतराष्ट्र)",
 		"original": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥ १-१॥",
-		"romanised": "dharma-ksetre kuru-ksetre\nsamaveta yuyutsavah\nmamakah pandavas caiva\nkim akurvata sanjaya 1.1"
+		"romanised": "dharma-ksetre kuru-ksetre\nsamaveta yuyutsavah\nmamakah pandavas caiva\nkim akurvata sanjaya 1.1",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"2": {
+		"adhyaya": 1,
+		"shloka": 2,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा ।\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥ १-२॥",
-		"romanised": "drstva tu pandavanikam\nvyudham duryodhanas tada\nacaryam upasangamya\nraja vacanam abravit 1.2"
+		"romanised": "drstva tu pandavanikam\nvyudham duryodhanas tada\nacaryam upasangamya\nraja vacanam abravit 1.2",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"3": {
+		"adhyaya": 1,
+		"shloka": 3,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् ।\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥ १-३॥",
-		"romanised": "pasyaitam pandu-putranam\nacarya mahatim camum\nvyudham drupada-putrena\ntava sisyena dhimata 1.3"
+		"romanised": "pasyaitam pandu-putranam\nacarya mahatim camum\nvyudham drupada-putrena\ntava sisyena dhimata 1.3",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"4": {
+		"adhyaya": 1,
+		"shloka": 4,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि ।\nयुयुधानो विराटश्च द्रुपदश्च महारथः ॥ १-४॥",
-		"romanised": "atra sura mahesv-asa\nbhimarjuna-sama yudhi\nyuyudhano viratas ca\ndrupadas ca maha-rathah 1.4"
+		"romanised": "atra sura mahesv-asa\nbhimarjuna-sama yudhi\nyuyudhano viratas ca\ndrupadas ca maha-rathah 1.4",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"5": {
+		"adhyaya": 1,
+		"shloka": 5,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥ १-५॥",
-		"romanised": "dhrstaketus cekitanah\nkasirajas ca viryavan\npurujit kuntibhojas ca\nsaibyas ca nara-pungavah 1.5"
+		"romanised": "dhrstaketus cekitanah\nkasirajas ca viryavan\npurujit kuntibhojas ca\nsaibyas ca nara-pungavah 1.5",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"6": {
+		"adhyaya": 1,
+		"shloka": 6,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥ १-६॥",
-		"romanised": "yudhamanyus ca vikranta\nuttamaujas ca viryavan\nsaubhadro draupadeyas ca\nsarva eva maha-rathah 1.6"
+		"romanised": "yudhamanyus ca vikranta\nuttamaujas ca viryavan\nsaubhadro draupadeyas ca\nsarva eva maha-rathah 1.6",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"7": {
+		"adhyaya": 1,
+		"shloka": 7,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम ।\n नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ॥ १-७॥",
-		"romanised": "asmakam tu visista ye\ntan nibodha dvijottama\nnayaka mama sainyasya\nsamjnartham tan bravimi te 1.7"
+		"romanised": "asmakam tu visista ye\ntan nibodha dvijottama\nnayaka mama sainyasya\nsamjnartham tan bravimi te 1.7",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"8": {
+		"adhyaya": 1,
+		"shloka": 8,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः ।\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ॥ १-८॥",
-		"romanised": "bhavan bhismas ca karnas ca\nkrpas ca samitim-jayah\nasvatthama vikarnas ca\nsaumadattis tathaiva ca 1.8"
+		"romanised": "bhavan bhismas ca karnas ca\nkrpas ca samitim-jayah\nasvatthama vikarnas ca\nsaumadattis tathaiva ca 1.8",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"9": {
+		"adhyaya": 1,
+		"shloka": 9,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः ।\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ॥ १-९॥",
-		"romanised": "anye ca bahavah sura\nmad-arthe tyakta-jivitah\nnana-sastra-praharanah\nsarve yuddha-visaradah 1.9"
+		"romanised": "anye ca bahavah sura\nmad-arthe tyakta-jivitah\nnana-sastra-praharanah\nsarve yuddha-visaradah 1.9",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"10": {
+		"adhyaya": 1,
+		"shloka": 10,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् ।\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम् ॥ १-१०॥",
-		"romanised": "aparyaptam tad asmakam\nbalam bhismabhiraksitam\nparyaptam tv idam etesam\nbalam bhimabhiraksitam 1.10"
+		"romanised": "aparyaptam tad asmakam\nbalam bhismabhiraksitam\nparyaptam tv idam etesam\nbalam bhimabhiraksitam 1.10",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"11": {
+		"adhyaya": 1,
+		"shloka": 11,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अयनेषु च सर्वेषु यथाभागमवस्थिताः ।\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ॥ १-११॥",
-		"romanised": "ayanesu ca sarvesu\nyatha-bhagam avasthitah\nbhismam evabhiraksantu\nbhavantah sarva eva hi 1.11"
+		"romanised": "ayanesu ca sarvesu\nyatha-bhagam avasthitah\nbhismam evabhiraksantu\nbhavantah sarva eva hi 1.11",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"12": {
+		"adhyaya": 1,
+		"shloka": 12,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः ।\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् ॥ १-१२॥",
-		"romanised": "tasya sanjanayan harsam\nkuru-vrddhah pitamahah\nsimha-nadam vinadyoccaih\nsankham dadhmau pratapavan 1.12"
+		"romanised": "tasya sanjanayan harsam\nkuru-vrddhah pitamahah\nsimha-nadam vinadyoccaih\nsankham dadhmau pratapavan 1.12",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"13": {
+		"adhyaya": 1,
+		"shloka": 13,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः ।सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ॥ १-१३॥",
-		"romanised": "tatah sankhas ca bheryas ca\npanavanaka-gomukhah\nsahasaivabhyahanyanta\nsa sabdas tumulo 'bhavat 1.13"
+		"romanised": "tatah sankhas ca bheryas ca\npanavanaka-gomukhah\nsahasaivabhyahanyanta\nsa sabdas tumulo 'bhavat 1.13",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"14": {
+		"adhyaya": 1,
+		"shloka": 14,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ ।\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ॥ १-१४॥",
-		"romanised": "tatah svetair hayair yukte\nmahati syandane sthitau\nmadhavah pandavas caiva\ndivyau sankhau pradadhmatuh 1.14"
+		"romanised": "tatah svetair hayair yukte\nmahati syandane sthitau\nmadhavah pandavas caiva\ndivyau sankhau pradadhmatuh 1.14",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"15": {
+		"adhyaya": 1,
+		"shloka": 15,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः ।\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ॥ १-१५॥",
-		"romanised": "pancajanyam hrsikeso\ndevadattam dhananjayah\npaundram dadhmau maha-sankham\nbhima-karma vrkodarah 1.15"
+		"romanised": "pancajanyam hrsikeso\ndevadattam dhananjayah\npaundram dadhmau maha-sankham\nbhima-karma vrkodarah 1.15",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"16": {
+		"adhyaya": 1,
+		"shloka": 16,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः ।\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ ॥ १-१६॥",
-		"romanised": "anantavijayam raja\nkunti-putro yudhisthirah\nnakulah sahadevas ca\nsughosa-manipuspakau 1.16"
+		"romanised": "anantavijayam raja\nkunti-putro yudhisthirah\nnakulah sahadevas ca\nsughosa-manipuspakau 1.16",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"17": {
+		"adhyaya": 1,
+		"shloka": 17,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "काश्यश्च परमेष्वासः शिखण्डी च महारथः ।\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ॥ १-१७॥",
-		"romanised": "kasyas ca paramesv-asah\nsikhandi ca maha-rathah\ndhrstadyumno viratas ca\nsatyakis caparajitah 1.17"
+		"romanised": "kasyas ca paramesv-asah\nsikhandi ca maha-rathah\ndhrstadyumno viratas ca\nsatyakis caparajitah 1.17",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"18": {
+		"adhyaya": 1,
+		"shloka": 18,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते ।\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक् ॥ १-१८॥",
-		"romanised": "drupado draupadeyas ca\nsarvasah prthivi-pate\nsaubhadras ca maha-bahuh\nsankhan dadhmuh prthak prthak 1.18"
+		"romanised": "drupado draupadeyas ca\nsarvasah prthivi-pate\nsaubhadras ca maha-bahuh\nsankhan dadhmuh prthak prthak 1.18",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"19": {
+		"adhyaya": 1,
+		"shloka": 19,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् ।\nनभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् ॥ १-१९॥",
-		"romanised": "sa ghoso dhartarastranam\nhrdayani vyadarayat\nnabhas ca prthivim caiva\ntumulo 'bhyanunadayan 1.19"
+		"romanised": "sa ghoso dhartarastranam\nhrdayani vyadarayat\nnabhas ca prthivim caiva\ntumulo 'bhyanunadayan 1.19",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"20": {
+		"adhyaya": 1,
+		"shloka": 20,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः ।\nप्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः\nहृषीकेशं तदा वाक्यमिदमाह महीपते । ॥ १-२०॥",
-		"romanised": "atha vyavasthitan drstva\ndhartarastran kapi-dhvajah\npravrtte sastra-sampate\ndhanur udyamya pandavah\nhrsikesam tada vakyam\nidam aha mahi-pate 1.20"
+		"romanised": "atha vyavasthitan drstva\ndhartarastran kapi-dhvajah\npravrtte sastra-sampate\ndhanur udyamya pandavah\nhrsikesam tada vakyam\nidam aha mahi-pate 1.20",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"21": {
+		"adhyaya": 1,
+		"shloka": 21,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ॥ १-२१॥",
-		"romanised": "senayor ubhayor madhye\nratham sthapaya me 'cyuta 1.21"
+		"romanised": "senayor ubhayor madhye\nratham sthapaya me 'cyuta 1.21",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"22": {
+		"adhyaya": 1,
+		"shloka": 22,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान् ।\nकैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे ॥ १-२२॥",
-		"romanised": "yavad etan nirikse 'ham\nyoddhu-kaman avasthitan\nkair maya saha yoddhavyam\nasmin rana-samudyame 1.22"
+		"romanised": "yavad etan nirikse 'ham\nyoddhu-kaman avasthitan\nkair maya saha yoddhavyam\nasmin rana-samudyame 1.22",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"23": {
+		"adhyaya": 1,
+		"shloka": 23,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः ।\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः ॥ १-२३॥",
-		"romanised": "yotsyamanan avekse 'ham\nya ete 'tra samagatah\ndhartarastrasya durbuddher\nyuddhe priya-cikirsavah 1.23"
+		"romanised": "yotsyamanan avekse 'ham\nya ete 'tra samagatah\ndhartarastrasya durbuddher\nyuddhe priya-cikirsavah 1.23",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"24": {
+		"adhyaya": 1,
+		"shloka": 24,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "एवमुक्तो हृषीकेशो गुडाकेशेन भारत ।\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ॥ १-२४॥",
-		"romanised": "evam ukto hrsikeso\ngudakesena bharata\nsenayor ubhayor madhye\nsthapayitva rathottamam 1.24"
+		"romanised": "evam ukto hrsikeso\ngudakesena bharata\nsenayor ubhayor madhye\nsthapayitva rathottamam 1.24",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"25": {
+		"adhyaya": 1,
+		"shloka": 25,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् ।\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति ॥ १-२५॥",
-		"romanised": "bhisma-drona-pramukhatah\nsarvesam ca mahi-ksitam\nuvaca partha pasyaitan\nsamavetan kurun iti 1.25"
+		"romanised": "bhisma-drona-pramukhatah\nsarvesam ca mahi-ksitam\nuvaca partha pasyaitan\nsamavetan kurun iti 1.25",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"26": {
+		"adhyaya": 1,
+		"shloka": 26,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् ।\nआचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा ॥ १-२६॥",
-		"romanised": "tatrapasyat sthitan parthah\npitrn atha pitamahan\nacaryan matulan bhratrn\nputran pautran sakhims tatha 1.26"
+		"romanised": "tatrapasyat sthitan parthah\npitrn atha pitamahan\nacaryan matulan bhratrn\nputran pautran sakhims tatha 1.26",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"27": {
+		"adhyaya": 1,
+		"shloka": 27,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "",
-		"romanised": "svasuran suhrdas caiva\nsenayor ubhayor api \ntan samiksya sa kaunteyah\nsarvan bandhun avasthitan\nkrpaya parayavisto\nvisidann idam abravit 1.27"
+		"romanised": "svasuran suhrdas caiva\nsenayor ubhayor api \ntan samiksya sa kaunteyah\nsarvan bandhun avasthitan\nkrpaya parayavisto\nvisidann idam abravit 1.27",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"28": {
+		"adhyaya": 1,
+		"shloka": 28,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् ॥ १-२८॥",
-		"romanised": "drstvemam sva-janam krsna\nyuyutsum samupasthitam 1.28"
+		"romanised": "drstvemam sva-janam krsna\nyuyutsum samupasthitam 1.28",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"29": {
+		"adhyaya": 1,
+		"shloka": 29,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति ।\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ १-२९॥",
-		"romanised": "sidanti mama gatrani\nmukham ca parisusyati\nvepathus ca sarire me\nroma-harsas ca jayate\n 1.29"
+		"romanised": "sidanti mama gatrani\nmukham ca parisusyati\nvepathus ca sarire me\nroma-harsas ca jayate\n 1.29",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"30": {
+		"adhyaya": 1,
+		"shloka": 30,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते ।\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥ १-३०॥",
-		"romanised": "gandivam sramsate hastat\ntvak caiva paridahyate\nna ca saknomy avasthatum\nbhramativa ca me manah 1.30"
+		"romanised": "gandivam sramsate hastat\ntvak caiva paridahyate\nna ca saknomy avasthatum\nbhramativa ca me manah 1.30",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"31": {
+		"adhyaya": 1,
+		"shloka": 31,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "निमित्तानि च पश्यामि विपरीतानि केशव ।\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ॥ १-३१॥",
-		"romanised": "nimittani ca pasyami\nviparitani kesava\nna ca sreyo 'nupasyami\nhatva sva-janam ahave 1.31"
+		"romanised": "nimittani ca pasyami\nviparitani kesava\nna ca sreyo 'nupasyami\nhatva sva-janam ahave 1.31",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"32": {
+		"adhyaya": 1,
+		"shloka": 32,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च ।\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ॥ १-३२॥",
-		"romanised": "na kankse vijayam krsna\nna ca rajyam sukhani ca \nkim no rajyena govinda\nkim bhogair jivitena va 1.32"
+		"romanised": "na kankse vijayam krsna\nna ca rajyam sukhani ca \nkim no rajyena govinda\nkim bhogair jivitena va 1.32",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"33": {
+		"adhyaya": 1,
+		"shloka": 33,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च ।\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ॥ १-३३॥",
-		"romanised": "yesam arthe kanksitam no\nrajyam bhogah sukhani ca\nta ime 'vasthita yuddhe\npranams tyaktva dhanani ca 1.33"
+		"romanised": "yesam arthe kanksitam no\nrajyam bhogah sukhani ca\nta ime 'vasthita yuddhe\npranams tyaktva dhanani ca 1.33",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"34": {
+		"adhyaya": 1,
+		"shloka": 34,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः ।\nमातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा ॥ १-३४॥",
-		"romanised": "acaryah pitarah putras\ntathaiva ca pitamahah\nmatulah svasurah pautrah\nsyalah sambandhinas tatha 1.34"
+		"romanised": "acaryah pitarah putras\ntathaiva ca pitamahah\nmatulah svasurah pautrah\nsyalah sambandhinas tatha 1.34",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"35": {
+		"adhyaya": 1,
+		"shloka": 35,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन ।\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते ॥ १-३५॥",
-		"romanised": "etan na hantum icchami\nghnato 'pi madhusudana\napi trailokya-rajyasya\nhetoh kim nu mahi-krte 1.35"
+		"romanised": "etan na hantum icchami\nghnato 'pi madhusudana\napi trailokya-rajyasya\nhetoh kim nu mahi-krte 1.35",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"36": {
+		"adhyaya": 1,
+		"shloka": 36,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन ।\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः ॥ १-३६॥",
-		"romanised": "nihatya dhartarastran nah\nka pritih syaj janardana\npapam evasrayed asman\nhatvaitan atatayinah 1.36"
+		"romanised": "nihatya dhartarastran nah\nka pritih syaj janardana\npapam evasrayed asman\nhatvaitan atatayinah 1.36",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"37": {
+		"adhyaya": 1,
+		"shloka": 37,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् ।\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव ॥ १-३७॥",
-		"romanised": "tasman narha vayam hantum\ndhartarastran sa-bandhavan\nsva-janam hi katham hatva\nsukhinah syama madhava 1.37"
+		"romanised": "tasman narha vayam hantum\ndhartarastran sa-bandhavan\nsva-janam hi katham hatva\nsukhinah syama madhava 1.37",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"38": {
+		"adhyaya": 1,
+		"shloka": 38,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः ।\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ॥ १-३८॥",
-		"romanised": "yady apy ete na pasyanti\nlobhopahata-cetasah\nkula-ksaya-krtam dosam\nmitra-drohe ca patakam 1.38"
+		"romanised": "yady apy ete na pasyanti\nlobhopahata-cetasah\nkula-ksaya-krtam dosam\nmitra-drohe ca patakam 1.38",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"39": {
+		"adhyaya": 1,
+		"shloka": 39,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् ।\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ॥ १-३९॥",
-		"romanised": "katham na jneyam asmabhih\npapad asman nivartitum\nkula-ksaya-krtam dosam\nprapasyadbhir janardana 1.39"
+		"romanised": "katham na jneyam asmabhih\npapad asman nivartitum\nkula-ksaya-krtam dosam\nprapasyadbhir janardana 1.39",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"40": {
+		"adhyaya": 1,
+		"shloka": 40,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः ।\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ॥ १-४०॥",
-		"romanised": "kula-ksaye pranasyanti\nkula-dharmah sanatanah\ndharme naste kulam krtsnam\nadharmo 'bhibhavaty uta 1.40"
+		"romanised": "kula-ksaye pranasyanti\nkula-dharmah sanatanah\ndharme naste kulam krtsnam\nadharmo 'bhibhavaty uta 1.40",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"41": {
+		"adhyaya": 1,
+		"shloka": 41,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः ।\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ॥ १-४१॥",
-		"romanised": "adharmabhibhavat krsna\npradusyanti kula-striyah\nstrisu dustasu varsneya\njayate varna-sankarah 1.41"
+		"romanised": "adharmabhibhavat krsna\npradusyanti kula-striyah\nstrisu dustasu varsneya\njayate varna-sankarah 1.41",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"42": {
+		"adhyaya": 1,
+		"shloka": 42,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च ।\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः ॥ १-४२॥",
-		"romanised": "sankaro narakayaiva\nkula-ghnanam kulasya ca\npatanti pitaro hy esam\nlupta-pindodaka-kriyah 1.42"
+		"romanised": "sankaro narakayaiva\nkula-ghnanam kulasya ca\npatanti pitaro hy esam\nlupta-pindodaka-kriyah 1.42",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"43": {
+		"adhyaya": 1,
+		"shloka": 43,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः ।\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ॥ १-४३॥",
-		"romanised": "dosair etaih kula-ghnanam\nvarna-sankara-karakaih\nutsadyante jati-dharmah\nkula-dharmas ca sasvatah 1.43"
+		"romanised": "dosair etaih kula-ghnanam\nvarna-sankara-karakaih\nutsadyante jati-dharmah\nkula-dharmas ca sasvatah 1.43",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"44": {
+		"adhyaya": 1,
+		"shloka": 44,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन ।\nनरके नियतं वासो भवतीत्यनुशुश्रुम ॥ १-४४॥",
-		"romanised": "utsanna-kula-dharmanam\nmanusyanam janardana\nnarake niyatam vaso\nbhavatity anususruma 1.44"
+		"romanised": "utsanna-kula-dharmanam\nmanusyanam janardana\nnarake niyatam vaso\nbhavatity anususruma 1.44",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"45": {
+		"adhyaya": 1,
+		"shloka": 45,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "अहो बत महत्पापं कर्तुं व्यवसिता वयम् ।\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ॥ १-४५॥",
-		"romanised": "aho bata mahat papam\nkartum vyavasita vayam\nyad rajya-sukha-lobhena\nhantum sva-janam udyatah 1.45"
+		"romanised": "aho bata mahat papam\nkartum vyavasita vayam\nyad rajya-sukha-lobhena\nhantum sva-janam udyatah 1.45",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"46": {
+		"adhyaya": 1,
+		"shloka": 46,
 		"speaker": "arjuna (अर्जुन)",
 		"original": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः ।\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ॥ १-४६॥",
-		"romanised": "yadi mam apratikaram\nasastram sastra-panayah\ndhartarastra rane hanyus\ntan me ksemataram bhavet 1.46"
+		"romanised": "yadi mam apratikaram\nasastram sastra-panayah\ndhartarastra rane hanyus\ntan me ksemataram bhavet 1.46",
+		"hindi": "TODO",
+		"english": "TODO"
 	},
 	"47": {
+		"adhyaya": 1,
+		"shloka": 47,
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "",
-		"romanised": "evam uktvarjunah sankhye\nrathopastha upavisat\nvisrjya sa-saram capam\nsoka-samvigna-manasah 1.47"
+		"romanised": "evam uktvarjunah sankhye\nrathopastha upavisat\nvisrjya sa-saram capam\nsoka-samvigna-manasah 1.47",
+		"hindi": "TODO",
+		"english": "TODO"
 	}
 }
