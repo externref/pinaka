@@ -1,3 +1,3 @@
-<div class="vedicfont">vedic</div>
+<div class="pinakafont">pinaka</div>
 
-This is documentation page for the vedic API.
+This is documentation page for the pinaka API.

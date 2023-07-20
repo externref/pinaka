@@ -1,4 +1,4 @@
-# vedic
+# pinaka
 
 ![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white)
 ![](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -9,14 +9,16 @@
 ![](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
 [![wakatime](https://wakatime.com/badge/user/91b4defa-58b1-4cc7-8a36-6ec947f61823/project/2252ad71-2553-4587-8d8d-78564f064482.svg?style=for-the-badge)](https://wakatime.com/@externref/projects/wzfykzprge)
 
-vedic is a simple API + website for querying sanatana literature including vedas, itihasas and other religious texts.
+pinaka is a simple API for querying sanatana literature including vedas, itihasas and other sanatana texts.
+
+*
+*
 
 ### current progress
 
 the API is under development and quite unstable, documentation is updated regularly to keep up with the development roadmap.
 
-preview deployment: [https://vedic.up.railway.app](https://vedic.up.railway.app)<br>
-documentation: [https://externref.github.io/vedic](https://externref.github.io/vedic)
+documentation: [https://externref.github.io/pinaka](https://externref.github.io/pinaka)
 
 ### contributions
 
