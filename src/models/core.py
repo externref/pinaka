@@ -9,4 +9,3 @@ class APIInfo(AttrsClassToPayload):
     paths: list[str]
     discord: str
     github: str
-    

@@ -31,9 +31,10 @@ app = fastapi.FastAPI(lifespan=setups)
 @app.get(endp._INDEX)
 def api_info() -> typing.Dict[str, typing.Union[str, int, typing.List[str]]]:
     return models.APIInfo(
-        version=__version__, paths=[route.path for route in app.routes if isinstance(route, fastapi.routing.APIRoute)],
+        version=__version__,
+        paths=[route.path for route in app.routes if isinstance(route, fastapi.routing.APIRoute)],
         discord="https://discord.gg/aFqaUbKKx4",
-        github="https://github.com/externref/"
+        github="https://github.com/externref/pinaka",
     ).to_payload()
 
 
@@ -42,14 +43,19 @@ async def get_gita_shloka(res: fastapi.Response, adhyaya: int, shloka: int) -> t
     try:
         shlkcls = await models.GitaShloka.new(db_pool, adhyaya, shloka)
         return shlkcls.to_payload()
-    except ShlokaNotFound as e:
+    except ShlokaNotFound:
         return fastapi.Response(status_code=404)
 
 
 @app.post(endp.BHAGAVADGITA_QUERY)
-async def query_gita(query: models.GitaQuery):
+async def query_gita(query: models.GitaQuery) -> typing.Dict[str, typing.Any]:
     return (
         await models.GitaQueryResponse.new(
             db_pool, query.adhyaya, query.dict().get("range"), query.dict().get("shlokas")
         )
     ).to_payload()
+
+
+@app.get(endp.SHIV_TANDAVA)
+async def shivtandava() -> typing.List[models.TandavaShlokaDict]:
+    return models.tandava.load_all_shlokas()
