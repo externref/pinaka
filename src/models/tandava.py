@@ -10,7 +10,7 @@ from src.utils import AttrsClassToPayload
 
 
 def load_all_shlokas() -> typing.List[TandavaShlokaDict]:
-    with open(r".\bin\shiv_tandava_strotam.json", encoding="utf-8") as file:
+    with open("./bin/shiv_tandava_strotam.json", encoding="utf-8") as file:
         return json.load(file)
 
 
