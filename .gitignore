@@ -3,4 +3,5 @@ __pycache__/
 .space
 logs/*log
 venv/
+site/
 dev.py

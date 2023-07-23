@@ -1,14 +1,24 @@
 name: update on space
-on: push
-
+'on': push
 jobs:
   push-to-space:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Build Documentation
+        run: |
+          python -m pip install poetry
+          python -m poetry install
+          poetry shell
+          mkdocs build
       - name: Deta Space Deployment Github Action
         uses: neobrains/space-deployment-github-action@v0.5
         with:
-          access_token: ${{ secrets.ACCESS_TOKEN }}
-          project_id: ${{ secrets.PROJECT_ID }}
+          access_token: '${{ secrets.ACCESS_TOKEN }}'
+          project_id: '${{ secrets.PROJECT_ID }}'
           space_push: true
