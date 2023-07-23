@@ -5,7 +5,7 @@ micros:
     src: ./
     engine: python3.9
     primary: true
-    run: uvicorn main:app
+    run: python -m uvicorn main:app
     public_routes:
       - "/*"
     presets:
