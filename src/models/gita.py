@@ -19,8 +19,8 @@ def _open_and_fill(adhyaya: int) -> typing.Dict[str, ShlokaDict]:
 class GitaQuery(pydantic.BaseModel):
     adhyaya: int
     shlokas: list[int] = []
-    start: int | None = None
-    end: int | None = None
+    start: typing.Optional[None] = None
+    end: typing.Optional[None] = None
 
 
 class ShlokaDict(typing.TypedDict):
