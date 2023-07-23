@@ -3,9 +3,9 @@
    width="90%"
   />
 
-Shlokas of the Bhagavad Gita are stored as *Shloka* objects.
+Shlokas of the Bhagavad Gita are stored as *GitaShloka* objects.
 
-???+ example "structure of a Shloka object"
+???+ example "structure of a GitaShloka object"
     ```json
     {
         "adhyaya": 0,
@@ -21,7 +21,7 @@ Shlokas of the Bhagavad Gita are stored as *Shloka* objects.
 ??? question "view in source"
     ```py
     @attrs.define(kw_only=True)
-    class Shloka:
+    class GitaShloka:
         adhyaya: int
         shloka: int
         speaker: str
@@ -104,7 +104,7 @@ fetches multiple shlokas from the API and returns them as a list of Shlokas.
         adhyaya: 1, shlokas: [1, 3, 4, 9]
     })
         const data = res.data 
-        // data stores Shloka objects in an array
+        // data stores GitaShloka objects in an array
     }
 
     main()

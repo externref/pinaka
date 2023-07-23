@@ -7,6 +7,8 @@ import typing
 import asyncpg
 import dotenv
 import fastapi
+import starlette
+from fastapi.staticfiles import StaticFiles
 
 from src import models
 from src.endpoints import endp
@@ -15,17 +17,25 @@ from src.exceptions import ShlokaNotFound
 from . import __version__
 
 dotenv.load_dotenv()
-db_pool: asyncpg.Pool[asyncpg.Record]
+db_pool: asyncpg.Pool[asyncpg.Record] = None
+
+
+async def create_pool() -> None:
+    global db_pool
+    db_pool = await asyncpg.create_pool(os.getenv("PGSQL_URL", ""))  # type: ignore
 
 
 @contextlib.asynccontextmanager
 async def setups(_: fastapi.FastAPI) -> typing.AsyncGenerator[typing.Any, None]:
     global db_pool
-    db_pool = await asyncpg.create_pool(os.getenv("PGSQL_URL", ""))  # type: ignore
+    if not db_pool:
+        await create_pool()
     yield
 
 
-app = fastapi.FastAPI(lifespan=setups)
+app = fastapi.FastAPI(lifespan=setups, docs_url=None)
+
+app.mount("/docs", StaticFiles(directory="site", html=True), name=".")
 
 
 @app.get(endp._INDEX)
@@ -59,3 +69,11 @@ async def query_gita(query: models.GitaQuery) -> typing.Dict[str, typing.Any]:
 @app.get(endp.SHIV_TANDAVA)
 async def shivtandava() -> typing.List[models.TandavaShlokaDict]:
     return models.tandava.load_all_shlokas()
+
+
+@app.get(endp.SHIV_TANDAVA_SHLOKA)
+async def tandavashloka(shloka: int) -> models.TandavaShlokaDict:
+    if shloka > 17:
+        return fastapi.Response(status_code=404)
+
+    return models.tandava.shlokas[shloka - 1].to_payload()

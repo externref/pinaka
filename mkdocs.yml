@@ -9,6 +9,7 @@ theme:
 nav:
    - index.md
    - bhagavad gita: gita.md
+   - shiv tandava: tandava.md
 
 extra_css:
    - stylesheets/extra.css
