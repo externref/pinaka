@@ -12,7 +12,7 @@ from src.utils import AttrsClassToPayload
 
 
 def _open_and_fill(adhyaya: int) -> typing.Dict[str, ShlokaDict]:
-    with open(f"bin/gita/adhyaya{adhyaya}.json", encoding="utf8") as file:
+    with open(f"./bin/gita/adhyaya{adhyaya}.json", encoding="utf8") as file:
         return json.load(file)
 
 
