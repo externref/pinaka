@@ -8,20 +8,18 @@
       
       
       
-        <link rel="canonical" href="https://example.com/gita/">
+        <link rel="canonical" href="https://example.com/tandava/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../gita/">
       
-      
-        <link rel="next" href="../tandava/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
     
     
       
-        <title>bhagavad gita - ॐ pinaka | docs</title>
+        <title>shiv tandava - ॐ pinaka | docs</title>
       
     
     
@@ -106,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              bhagavad gita
+              shiv tandava
             
           </span>
         </div>
@@ -207,6 +205,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../gita/" class="md-nav__link">
+        bhagavad gita
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -217,12 +230,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          bhagavad gita
+          shiv tandava
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        bhagavad gita
+        shiv tandava
       </a>
       
         
@@ -254,22 +267,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#querying-the-gita" class="md-nav__link">
-    querying the gita
+  <a href="#fetching-the-entire-strotam" class="md-nav__link">
+    fetching the entire strotam
   </a>
-  
-    <nav class="md-nav" aria-label="querying the gita">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    PARAMETERS
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -282,21 +282,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tandava/" class="md-nav__link">
-        shiv tandava
-      </a>
     </li>
   
 
@@ -341,22 +326,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#querying-the-gita" class="md-nav__link">
-    querying the gita
+  <a href="#fetching-the-entire-strotam" class="md-nav__link">
+    fetching the entire strotam
   </a>
-  
-    <nav class="md-nav" aria-label="querying the gita">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    PARAMETERS
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -380,62 +352,53 @@
                   
 
 
-  <h1>bhagavad gita</h1>
+  <h1>shiv tandava</h1>
 
 <p><img
-   src="../assets/gita_banner_text.png"
-   width="90%"
+   src="../assets/tandava_banner_text.png"
   /></p>
-<p>Shlokas of the Bhagavad Gita are stored as <em>GitaShloka</em> objects.</p>
+<p>Shlokas from the Shiva Tandava Strotam are stored as <em>TandavaShloka</em> objects.</p>
 <details class="example" open="open">
-<summary>structure of a GitaShloka object</summary>
+<summary>structure of a TandavaShloka object</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;adhyaya&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;shloka&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;speaker&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;the speaker of the shloka&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;original&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;the actual shloka&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;romanised&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;romanised version of the shloka&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;hindi&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hindi translation of the shloka&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;english&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;english translation of the shloka&quot;</span>
+<span class="w">    </span><span class="nt">&quot;shloka&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;original&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;जटाटवीगलज्जलप्रवाहपावितस्थले\nगलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।\nडमड्डमड्डमड्डमन्निनादवड्डमर्वयं\nचकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥१॥&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;romanised&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jatatavigalajjala pravahapavitasthale\nGaleavalambya lambitam bhujangatungamalikam\nDamad damad damaddama ninadavadamarvayam\nChakara chandtandavam tanotu nah shivah shivam&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 </details>
 <details class="question">
 <summary>view in source</summary>
 <div class="highlight"><pre><span></span><code><span class="nd">@attrs</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="n">kw_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">GitaShloka</span><span class="p">:</span>
-    <span class="n">adhyaya</span><span class="p">:</span> <span class="nb">int</span>
+<span class="k">class</span> <span class="nc">TandavaShloka</span><span class="p">(</span><span class="n">AttrsClassToPayload</span><span class="p">):</span>
     <span class="n">shloka</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">speaker</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">original</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">romanised</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">english</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">hindi</span><span class="p">:</span> <span class="nb">str</span>
 </code></pre></div>
 </details>
 <h2 id="endpoints">Endpoints</h2>
 <h3 id="fetching-a-shloka">fetching a shloka</h3>
 <ul>
-<li>Endpoint: <code>/bhagavadgita/{adhyaya}/{shloka}</code></li>
+<li>Endpoint: <code>/shivtandava/{shloka}</code></li>
 </ul>
-<p>Fetches the shloka number from the provided adhyaya number, the shloka and adhyaya number must be positive integer values.
-If no data for the requested values are found a <code>404</code> status is returned.</p>
+<p>Queries a particular shloka from the strotam using it's index number.
+a 404 error is returned if the index is invalid (&gt;17). For querying shlokas in group see the next endpoint.</p>
 <details class="examples">
 <summary>Examples</summary>
 <p><strong>python:</strong>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span> <span class="s2">&quot;&lt;core endpoint&gt;/bhagavadgita/1/1&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;&lt;core endpoint&gt;/shivtandava/1&quot;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No data found.&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">shloka_data</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="o">|</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-    <span class="c1"># the shloka_data is now a dictionary that contains all the </span>
+    <span class="n">shloka_data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="c1"># the shloka_data is now a dictionary that contains all the</span>
     <span class="c1"># shloka class data as keys and values</span>
 </code></pre></div></p>
 <p><strong>embedded js</strong>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">req</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">XMLHttpRequest</span><span class="p">()</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&lt;core endpoint&gt;/bhagavadgita/1/1&quot;</span><span class="p">)</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&lt;core endpoint&gt;/shivtandava/1&quot;</span><span class="p">)</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">onload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">404</span><span class="p">)</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Data not found.&quot;</span><span class="p">)</span>
 <span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
@@ -447,61 +410,36 @@ If no data for the requested values are found a <code>404</code> status is retur
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">()</span>
 </code></pre></div></p>
 </details>
-<h3 id="querying-the-gita">querying the gita</h3>
+<h3 id="fetching-the-entire-strotam">fetching the entire strotam</h3>
 <ul>
-<li>Endpoint: <code>/bhagavadgita/query</code></li>
+<li>Endpoint: <code>/shivtandava</code></li>
 </ul>
-<p>fetches multiple shlokas from the API and returns them as a list of Shlokas.</p>
-<h4 id="parameters">PARAMETERS</h4>
-<table>
-<thead>
-<tr>
-<th align="left">Param</th>
-<th align="left">Info</th>
-<th align="left">Dtype</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">adhyaya</td>
-<td align="left">Adhyaya from which shlokas are to be fetched</td>
-<td align="left">int</td>
-</tr>
-<tr>
-<td align="left">range</td>
-<td align="left">Range of shlokas to be fetched</td>
-<td align="left">[int, int]</td>
-</tr>
-<tr>
-<td align="left">shlokas</td>
-<td align="left">The shloka number of the shlokas to fetch</td>
-<td align="left">[int, ...]</td>
-</tr>
-</tbody>
-</table>
+<p>Entire shloka in form of a list of TandavaShloka objects is returned.</p>
 <details class="examples">
 <summary>Examples</summary>
-<p><strong>python</strong>
+<p><strong>python:</strong>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
-    <span class="s2">&quot;&lt;core endpoint&gt;/bhagavadgita/query&quot;</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;adhyaya&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;range&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]}</span>
-<span class="p">)</span>
-<span class="n">res</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">()</span> <span class="c1"># data var stores a list of shloka dictionaries.</span>
-</code></pre></div>
-<strong>typescript</strong>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">axios</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;axios&quot;</span><span class="p">;</span>
-
-<span class="kd">const</span><span class="w"> </span><span class="nx">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()=&gt;{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">axios</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;&lt;core endpoint&gt;/bhagavadgita/query&quot;</span><span class="p">,{</span>
-<span class="w">    </span><span class="nx">adhyaya</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="p">,</span><span class="w"> </span><span class="nx">shlokas</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">9</span><span class="p">]</span>
-<span class="p">})</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="w"> </span>
-<span class="w">    </span><span class="c1">// data stores GitaShloka objects in an array</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;&lt;core endpoint&gt;/shivtandava&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No data found.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">shloka_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="c1"># the shloka_data is now a dictionary that contains all the</span>
+    <span class="c1"># shloka class data in a list</span>
+</code></pre></div></p>
+<p><strong>embedded js</strong>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">req</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">XMLHttpRequest</span><span class="p">()</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&lt;core endpoint&gt;/shivtandava&quot;</span><span class="p">)</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">onload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">404</span><span class="p">)</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Data not found.&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">shlokaData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">responseText</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">// the shloka_data is now a dictionary that contains all the </span>
+<span class="w">        </span><span class="c1">// shloka class data in an array</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-
-<span class="nx">main</span><span class="p">()</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">()</span>
 </code></pre></div></p>
 </details>
 
