@@ -1,5 +1,5 @@
 <img
-   src="../assets/pinaka_text_samarakan.png"
+   src="./assets/pinaka_text_samarakan.png"
    width="50%"
   />
 
