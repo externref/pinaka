@@ -59,7 +59,7 @@ class GitaShloka(AttrsClassToPayload):
 
     @classmethod
     async def new(cls, dbdriver: asyncpg.Pool[asyncpg.Record], adhyaya: int, shloka: int) -> GitaShloka:
-        base = {
+        base: ShlokaDict = {
             "adhyaya": adhyaya,
             "shloka": shloka,
             "speaker": "unavailable",
@@ -81,7 +81,7 @@ class GitaQueryResponse(AttrsClassToPayload):
     adhyaya: int
     range: typing.Tuple[int, int] | None = None
     shlokas: typing.Tuple[int, ...] | None = None
-    responses: typing.List[ShlokaDict] = []
+    responses: typing.List[typing.Dict[str, typing.Any]] = []
 
     @classmethod
     async def new(

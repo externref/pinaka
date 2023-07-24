@@ -1,3 +1,7 @@
+<img
+   src="../assets/tandava_banner_text.png"
+  />
+
 Shlokas from the Shiva Tandava Strotam are stored as *TandavaShloka* objects.
 
 ???+ example "structure of a TandavaShloka object"

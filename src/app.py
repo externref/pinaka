@@ -7,8 +7,8 @@ import typing
 import asyncpg
 import dotenv
 import fastapi
-import starlette
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 
 from src import models
 from src.endpoints import endp
@@ -17,24 +17,23 @@ from src.exceptions import ShlokaNotFound
 from . import __version__
 
 dotenv.load_dotenv()
-db_pool: asyncpg.Pool[asyncpg.Record] = None
-
-
-async def create_pool() -> None:
-    global db_pool
-    db_pool = await asyncpg.create_pool(os.getenv("PGSQL_URL", ""))  # type: ignore
+db_pool: asyncpg.Pool[asyncpg.Record] = None # type: ignore
 
 
 @contextlib.asynccontextmanager
 async def setups(_: fastapi.FastAPI) -> typing.AsyncGenerator[typing.Any, None]:
     global db_pool
     if not db_pool:
-        await create_pool()
+        db_pool = await asyncpg.create_pool(os.getenv("PGSQL_URL", ""))  # type: ignore
     yield
 
 
-app = fastapi.FastAPI(lifespan=setups, docs_url=None)
-
+app = fastapi.FastAPI(lifespan=setups, docs_url="/_devdocs")
+app.add_middleware(
+    CORSMiddleware, allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app.mount("/docs", StaticFiles(directory="site", html=True), name=".")
 
 
@@ -54,14 +53,14 @@ async def get_gita_shloka(res: fastapi.Response, adhyaya: int, shloka: int) -> t
         shlkcls = await models.GitaShloka.new(db_pool, adhyaya, shloka)
         return shlkcls.to_payload()
     except ShlokaNotFound:
-        return fastapi.Response(status_code=404)
+        return fastapi.Response(status_code=404) # type: ignore
 
 
 @app.post(endp.BHAGAVADGITA_QUERY)
 async def query_gita(query: models.GitaQuery) -> typing.Dict[str, typing.Any]:
     return (
         await models.GitaQueryResponse.new(
-            db_pool, query.adhyaya, query.dict().get("range"), query.dict().get("shlokas")
+            db_pool, query.adhyaya, query.model_dump().get("range"), query.model_dump().get("shlokas")
         )
     ).to_payload()
 
@@ -72,8 +71,8 @@ async def shivtandava() -> typing.List[models.TandavaShlokaDict]:
 
 
 @app.get(endp.SHIV_TANDAVA_SHLOKA)
-async def tandavashloka(shloka: int) -> models.TandavaShlokaDict:
+async def tandavashloka(shloka: int) -> typing.Dict[str, typing.Any]:
     if shloka > 17:
-        return fastapi.Response(status_code=404)
+        return fastapi.Response(status_code=404) # type: ignore
 
     return models.tandava.shlokas[shloka - 1].to_payload()

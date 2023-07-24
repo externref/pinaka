@@ -11,14 +11,19 @@
 
 pinaka is a simple API for querying sanatana literature including vedas, itihasas and other sanatana texts.
 
-*
-*
-
 ### current progress
 
 the API is under development and quite unstable, documentation is updated regularly to keep up with the development roadmap.
 
-documentation: [https://externref.github.io/pinaka](https://externref.github.io/pinaka)
+
+preview deployment: [https://pinaka-1-j7999633.deta.app](https://pinaka-1-j7999633.deta.app) <br>
+documentation: [https://pinaka-1-j7999633.deta.app/docs](https://pinaka-1-j7999633.deta.app/docs) <br>
+github documentation: [https://externref.github.io/pinaka](https://externref.github.io/pinaka) <br>
+
+#### in progress
+
+* shrimad bhagavad gita
+* shiv tandav strotam
 
 ### contributions
 
