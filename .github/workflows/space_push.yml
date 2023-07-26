@@ -28,7 +28,8 @@ jobs:
           git clone https://github.com/externref/pinaka_frontend
           cd pinaka_frontend
           yarn install; yarn build
-          
+          cd ..
+
       - name: Deta Space Deployment Github Action
         uses: neobrains/space-deployment-github-action@v0.5
         with:

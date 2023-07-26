@@ -35,13 +35,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.mount("/docs", StaticFiles(directory="site", html=True), name=".")
+app.mount("/docs", StaticFiles(directory="./site", html=True), name=".")
 
 try:
-    app.mount("/ui", StaticFiles(directory="pinaka_frontend/build", html=True), name="ui")
-    app.mount("/_app", StaticFiles(directory="pinaka_frontend/build/_app"), name="_app")
+    app.mount("/ui", StaticFiles(directory="./pinaka_frontend/build", html=True), name="ui")
+    app.mount("/_app", StaticFiles(directory="./pinaka_frontend/build/_app"), name="_app")
 except RuntimeError:
-    logging.warn("Continuing without user interface.")
+    logging.info("Continuing without user interface.")
     
 
 @app.get("/samarkan.ttf")
