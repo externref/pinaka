@@ -6,7 +6,8 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3
-      - name: Install dependencies
+
+      - name: Install Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
@@ -15,6 +16,19 @@ jobs:
           python -m pip install poetry
           python -m poetry install
           poetry run mkdocs build
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+            node-version: 'latest'
+      
+      - name: Build UI
+        run: |
+          npm i yarn -g
+          git clone https://github.com/externref/pinaka_frontend
+          cd pinaka_frontend
+          yarn install; yarn build
+          
       - name: Deta Space Deployment Github Action
         uses: neobrains/space-deployment-github-action@v0.5
         with:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import contextlib
+import logging
 import os
 import typing
 
@@ -36,6 +37,16 @@ app.add_middleware(
 )
 app.mount("/docs", StaticFiles(directory="site", html=True), name=".")
 
+try:
+    app.mount("/ui", StaticFiles(directory="pinaka_frontend/build", html=True), name="ui")
+    app.mount("/_app", StaticFiles(directory="pinaka_frontend/build/_app"), name="_app")
+except RuntimeError:
+    logging.warn("Continuing without user interface.")
+    
+
+@app.get("/samarkan.ttf")
+async def samarkan_font() -> fastapi.responses.FileResponse:
+    return fastapi.responses.FileResponse("./docs/assets/samarkan.ttf")
 
 @app.get(endp._INDEX)
 def api_info() -> typing.Dict[str, typing.Union[str, int, typing.List[str]]]:

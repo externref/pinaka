@@ -29,8 +29,8 @@ class ShlokaDict(typing.TypedDict):
     speaker: str
     original: str
     romanised: str
-    english: str
-    hindi: str
+    english: str | None
+    hindi: str | None 
 
 
 @attrs.define(kw_only=True)
@@ -40,8 +40,8 @@ class GitaShloka(AttrsClassToPayload):
     speaker: str
     original: str
     romanised: str
-    english: str
-    hindi: str
+    english: typing.Optional[str]
+    hindi: typing.Optional[str]
 
     _cache: typing.Dict[int, typing.Dict[str, ShlokaDict]] = {}
 
@@ -62,11 +62,11 @@ class GitaShloka(AttrsClassToPayload):
         base: ShlokaDict = {
             "adhyaya": adhyaya,
             "shloka": shloka,
-            "speaker": "unavailable",
-            "original": "not added yet",
-            "romanised": "not added yet",
-            "hindi": "not added yet",
-            "english": "not added yet",
+            "speaker": "",
+            "original": "",
+            "romanised": "",
+            "hindi": None,
+            "english": None,
         }
         shloka_dict = cls._attempt_local(adhyaya, shloka) or await cls.fetch(dbdriver, adhyaya, shloka)
         base.update(shloka_dict)

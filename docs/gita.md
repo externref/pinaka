@@ -27,8 +27,8 @@ Shlokas of the Bhagavad Gita are stored as *GitaShloka* objects.
         speaker: str
         original: str
         romanised: str
-        english: str
-        hindi: str
+        english: str | None
+        hindi: str | None
     ```
 
 Endpoints
