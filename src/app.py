@@ -38,8 +38,8 @@ app.add_middleware(
 app.mount("/docs", StaticFiles(directory="./site", html=True), name=".")
 
 try:
-    app.mount("/ui", StaticFiles(directory="./pinaka_frontend/build", html=True), name="ui")
-    app.mount("/_app", StaticFiles(directory="./pinaka_frontend/build/_app"), name="_app")
+    app.mount("/ui", StaticFiles(directory="./ui", html=True), name="ui")
+    app.mount("/_app", StaticFiles(directory="./ui/_app"), name="_app")
 except RuntimeError:
     logging.info("Continuing without user interface.")
     
