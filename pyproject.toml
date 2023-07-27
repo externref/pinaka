@@ -23,6 +23,7 @@ ruff = "^0.0.278"
 pyright = "^1.1.317"
 mkdocs = "^1.4.3"
 mkdocs-material = "^9.1.19"
+pytest = "^7.4.0"
 
 [tool.pyright]
 pythonVersion = "3.8"

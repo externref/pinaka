@@ -30,7 +30,7 @@ class ShlokaDict(typing.TypedDict):
     original: str
     romanised: str
     english: str | None
-    hindi: str | None 
+    hindi: str | None
 
 
 @attrs.define(kw_only=True)
