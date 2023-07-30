@@ -36,11 +36,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.mount("/docs", StaticFiles(directory="./site", html=True), name=".")
 
 try:
-    app.mount("/ui", StaticFiles(directory="./ui", html=True), name="ui")
-    app.mount("/_app", StaticFiles(directory="./ui/_app"), name="_app")
+    app.mount("/docs", StaticFiles(directory="./site", html=True), name=".")
+    app.mount("/ui", StaticFiles(directory=os.getenv("UI_DIR", "./ui"), html=True), name="ui")
+    app.mount("/_app", StaticFiles(directory=f'{os.getenv("UI_DIR", "./ui")}/_app'), name="_app")
 except RuntimeError:
     logging.info("Continuing without user interface.")
 
