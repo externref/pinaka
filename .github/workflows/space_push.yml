@@ -1,5 +1,12 @@
 name: update on space
-"on": push
+on: 
+  push:
+    branches:
+      - '*'
+  repository_dispatch:
+    types:
+      - update_api
+    
 jobs:
   push-to-space:
     runs-on: ubuntu-latest
