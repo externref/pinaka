@@ -49,12 +49,15 @@ except RuntimeError:
 async def samarkan_font() -> fastapi.responses.FileResponse:
     return fastapi.responses.FileResponse("./docs/assets/samarkan.ttf", media_type="font/ttf")
 
+@app.get("/favicon.ico")
+async def favicon() -> fastapi.responses.FileResponse:
+    return fastapi.responses.FileResponse("./assets/favicon.ico")
 
 @app.get(endp._INDEX)
 def api_info() -> typing.Dict[str, typing.Union[str, int, typing.List[str]]]:
     return models.APIInfo(
         version=__version__,
-        paths=[route.path for route in app.routes if isinstance(route, fastapi.routing.APIRoute)],
+        paths=[route.path for route in app.routes if isinstance(route, fastapi.routing.APIRoute) and route.path.find(".")==-1],
         discord="https://discord.gg/aFqaUbKKx4",
         github="https://github.com/externref/pinaka",
     ).to_payload()
@@ -91,3 +94,4 @@ async def tandavashloka(shloka: int) -> typing.Dict[str, typing.Any]:
         return fastapi.Response(status_code=404)  # type: ignore
 
     return models.tandava.shlokas[shloka - 1].to_payload()
+
