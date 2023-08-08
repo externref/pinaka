@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>\n converter</title>
+    <script>
+      function submit() {
+        document.getElementById("data").innerText = document
+          .getElementById("input")
+          .value.replaceAll("\n", "\\n");
+      }
+    </script>
+  </head>
+  <body>
+    <label for="input">Enter Text to transform:</label>
+    <textarea id="input" height="300px" width="5000px"></textarea>
+    <button onclick="submit()">transform</button>
+    <div id="data">...</div>
+  </body>
+</html>

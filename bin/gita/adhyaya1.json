@@ -5,7 +5,7 @@
 		"speaker": "dhṛtarāṣṭra (धृतराष्ट्र)",
 		"original": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥१-१॥",
 		"romanised": "dharma-ksetre kuru-ksetre samaveta yuyutsavah\nmamakah pandavas caiva kim akurvata sanjaya 1.1",
-		"hindi": null,
+		"hindi": "धृतराष्ट्र बोले: हे संजय ! धर्मभूमि कुरुक्षेत्रमें एकत्रित, युद्धकी इच्छावाले मेरे और पाण्डुके पुत्रोंने क्‍या किया ?",
 		"english": null
 	},
 	"2": {
@@ -14,7 +14,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा ।\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥१-२॥",
 		"romanised": "drstva tu pandavanikam vyudham duryodhanas tada\nacaryam upasangamya raja vacanam abravit 1.2",
-		"hindi": null,
+		"hindi": "संजय बोले: उस समय राजा दुर्योधनने\nव्यूहरचनायुक्त पाण्डवोंकी सेनाकों देखकर और\nद्रोणाचार्यके पास जाकर यह वचन कहा ।",
 		"english": null
 	},
 	"3": {
@@ -23,34 +23,34 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् ।\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥१-३॥",
 		"romanised": "pasyaitam pandu-putranam acarya mahatim camum\nvyudham drupada-putrena tava sisyena dhimata 1.3",
-		"hindi": null,
+		"hindi": "हे आचार्य ! आपके बुद्धिमान्‌ शिष्य द्वुपदपुत्र धृष्टययुम्रद्वारा व्यूहाकार खड़ी की हुई पाण्डुपुत्रोंकी इस बड़ी भारी सेनाको देखिये",
 		"english": null
 	},
 	"4": {
 		"adhyaya": 1,
 		"shloka": 4,
 		"speaker": "sañjaya (सञ्जय)",
-		"original": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि ।\nयुयुधानो विराटश्च द्रुपदश्च महारथः ॥१-४॥",
-		"romanised": "atra sura mahesv-asa bhimarjuna-sama yudhi\nyuyudhano viratas ca drupadas ca maha-rathah 1.4",
-		"hindi": null,
+		"original": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि ।\nयुयुधानो विराटश्च द्रुपदश्च महारथः ॥१-४॥\nधृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥१-५॥\nयुधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥१-६॥",
+		"romanised": "atra sura mahesv-asa bhimarjuna-sama yudhi\nyuyudhano viratas ca drupadas ca maha-rathah 1.4\ndhrstaketus cekitanah kasirajas ca viryavan\npurujit kuntibhojas ca saibyas ca nara-pungavah 1.5\nyudhamanyus ca vikranta uttamaujas ca viryavan\nsaubhadro draupadeyas ca sarva eva maha-rathah 1.6",
+		"hindi": "इस सेनामें बड़े-बड़े धनुषोंवाले तथा युद्धमें\nभीम और अर्जुनके समान शूरवीर सात्यकि और\nविराट तथा महारथी राजा द्व॒ुपद, धृष्टकेतु और\nचेकितान तथा बलवान्‌ काशिराज, पुरुजितू कुन्तिभोज\nऔर मनुष्योंमें श्रेष्ठ शैब्य, पराक्रमी युधामन्यु तथा\nबलवान्‌ उत्तमौजा, सुभद्रापुत्र अभिमन्यु एवं द्रौपदीके\nपाँचों पुत्र--ये सभी महारथी हैं ।",
 		"english": null
 	},
 	"5": {
 		"adhyaya": 1,
 		"shloka": 5,
 		"speaker": "sañjaya (सञ्जय)",
-		"original": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥१-५॥",
-		"romanised": "dhrstaketus cekitanah kasirajas ca viryavan\npurujit kuntibhojas ca saibyas ca nara-pungavah 1.5",
-		"hindi": null,
+		"original": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि ।\nयुयुधानो विराटश्च द्रुपदश्च महारथः ॥१-४॥\nधृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥१-५॥\nयुधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥१-६॥",
+		"romanised": "atra sura mahesv-asa bhimarjuna-sama yudhi\nyuyudhano viratas ca drupadas ca maha-rathah 1.4\ndhrstaketus cekitanah kasirajas ca viryavan\npurujit kuntibhojas ca saibyas ca nara-pungavah 1.5\nyudhamanyus ca vikranta uttamaujas ca viryavan\nsaubhadro draupadeyas ca sarva eva maha-rathah 1.6",
+		"hindi": "इस सेनामें बड़े-बड़े धनुषोंवाले तथा युद्धमें\nभीम और अर्जुनके समान शूरवीर सात्यकि और\nविराट तथा महारथी राजा द्व॒ुपद, धृष्टकेतु और\nचेकितान तथा बलवान्‌ काशिराज, पुरुजितू कुन्तिभोज\nऔर मनुष्योंमें श्रेष्ठ शैब्य, पराक्रमी युधामन्यु तथा\nबलवान्‌ उत्तमौजा, सुभद्रापुत्र अभिमन्यु एवं द्रौपदीके\nपाँचों पुत्र--ये सभी महारथी हैं ।",
 		"english": null
 	},
 	"6": {
 		"adhyaya": 1,
 		"shloka": 6,
 		"speaker": "sañjaya (सञ्जय)",
-		"original": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥१-६॥",
-		"romanised": "yudhamanyus ca vikranta uttamaujas ca viryavan\nsaubhadro draupadeyas ca sarva eva maha-rathah 1.6",
-		"hindi": null,
+		"original": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि ।\nयुयुधानो विराटश्च द्रुपदश्च महारथः ॥१-४॥\nधृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥१-५॥\nयुधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥१-६॥",
+		"romanised": "atra sura mahesv-asa bhimarjuna-sama yudhi\nyuyudhano viratas ca drupadas ca maha-rathah 1.4\ndhrstaketus cekitanah kasirajas ca viryavan\npurujit kuntibhojas ca saibyas ca nara-pungavah 1.5\nyudhamanyus ca vikranta uttamaujas ca viryavan\nsaubhadro draupadeyas ca sarva eva maha-rathah 1.6",
+		"hindi": "इस सेनामें बड़े-बड़े धनुषोंवाले तथा युद्धमें\nभीम और अर्जुनके समान शूरवीर सात्यकि और\nविराट तथा महारथी राजा द्व॒ुपद, धृष्टकेतु और\nचेकितान तथा बलवान्‌ काशिराज, पुरुजितू कुन्तिभोज\nऔर मनुष्योंमें श्रेष्ठ शैब्य, पराक्रमी युधामन्यु तथा\nबलवान्‌ उत्तमौजा, सुभद्रापुत्र अभिमन्यु एवं द्रौपदीके\nपाँचों पुत्र--ये सभी महारथी हैं ।",
 		"english": null
 	},
 	"7": {
@@ -59,7 +59,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम ।\n नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ॥१-७॥",
 		"romanised": "asmakam tu visista ye tan nibodha dvijottama\nnayaka mama sainyasya samjnartham tan bravimi te 1.7",
-		"hindi": null,
+		"hindi": "हे ब्राह्मणश्रेष्ठ । अपने पक्षमें भी जो प्रधान हैं, उनको\nआप समझ लीजिये। आपकी जानकारीके लिये मेरी\nसेनाके जो-जो सेनापति हैं, उनको बतलाता हूँ ।",
 		"english": null
 	},
 	"8": {
@@ -68,7 +68,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः ।\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ॥१-८॥",
 		"romanised": "bhavan bhismas ca karnas ca krpas ca samitim-jayah\nasvatthama vikarnas ca saumadattis tathaiva ca 1.8",
-		"hindi": null,
+		"hindi": "आप-द्रोणाचार्य और पितामह भीष्म तथा कर्ण\nऔर संग्रामविजयी कृपाचार्य तथा वैसे ही अश्वत्थामा,\nविकर्ण और सोमदत्तका पुत्र भूरिश्रवा ।",
 		"english": null
 	},
 	"9": {
@@ -77,7 +77,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः ।\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ॥१-९॥",
 		"romanised": "anye ca bahavah sura mad-arthe tyakta-jivitah\nnana-sastra-praharanah sarve yuddha-visaradah 1.9",
-		"hindi": null,
+		"hindi": "और भी मेरे लिये जीवनकी आशा त्याग देनेवाले\nबहुत-से शूरबीर अनेक प्रकारके शस्त्रास्त्रोंसे सुसज्जित\nऔर सब-के-सब युद्धमें चतुर हैं ।",
 		"english": null
 	},
 	"10": {
@@ -86,7 +86,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् ।\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम् ॥१-१०॥",
 		"romanised": "aparyaptam tad asmakam balam bhismabhiraksitam\nparyaptam tv idam etesam balam bhimabhiraksitam 1.10",
-		"hindi": null,
+		"hindi": "भीष्मपितामहद्वारा रक्षित हमारी वह सेना सब\nप्रकारसे अजेय है और भीमद्वारा रक्षित इन लोगोंकी\nयह सेना जीतनेमें सुगम है ।",
 		"english": null
 	},
 	"11": {
@@ -95,7 +95,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अयनेषु च सर्वेषु यथाभागमवस्थिताः ।\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ॥१-११॥",
 		"romanised": "ayanesu ca sarvesu yatha-bhagam avasthitah\nbhismam evabhiraksantu bhavantah sarva eva hi 1.11",
-		"hindi": null,
+		"hindi": "इसलिये सब मोचोपर अपनी-अपनी जगह\nस्थित रहते हुए आपलोग सभी निःसन्देह\nभीष्मपितामहकी ही सब ओरसे रक्षा करें ।",
 		"english": null
 	},
 	"12": {
@@ -104,7 +104,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः ।\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् ॥१-१२॥",
 		"romanised": "tasya sanjanayan harsam\nkuru-vrddhah pitamahah\nsimha-nadam vinadyoccaih\nsankham dadhmau pratapavan 1.12",
-		"hindi": null,
+		"hindi": "कौरवोंमें वृद्ध बड़े प्रतापी पितामह भीष्मने उस\nदुर्योधनके हृदयमें हर्ष उत्पन्न करते हुए उच्च स्वरसे\nसिंहकी दहाड़के समान गरजकर शंख बजाया ।",
 		"english": null
 	},
 	"13": {
@@ -113,7 +113,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः ।सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ॥१-१३॥",
 		"romanised": "tatah sankhas ca bheryas ca\npanavanaka-gomukhah\nsahasaivabhyahanyanta\nsa sabdas tumulo 'bhavat 1.13",
-		"hindi": null,
+		"hindi": "इसके पश्चात्‌ शंख और नगारे तथा ढोल,\nमृदंग और नरसिंघे आदि बाजे एक साथ ही बज\nउठे । उनका वह शब्द बड़ा भयंकर हुआ:3",
 		"english": null
 	},
 	"14": {
@@ -122,7 +122,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ ।\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ॥१-१४॥",
 		"romanised": "tatah svetair hayair yukte mahati syandane sthitau\nmadhavah pandavas caiva divyau sankhau pradadhmatuh 1.14",
-		"hindi": null,
+		"hindi": "इसके अनन्तर सफेद घोड़ोंसे युक्त उत्तम रथमें बैठे हुए श्रीकृष्ण महाराज और अर्जुनने भी अलौकिक शंख बजाये:3",
 		"english": null
 	},
 	"15": {
@@ -131,7 +131,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः ।\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ॥१-१५॥",
 		"romanised": "pancajanyam hrsikeso devadattam dhananjayah\npaundram dadhmau maha-sankham bhima-karma vrkodarah 1.15",
-		"hindi": null,
+		"hindi": "श्रीकृष्ण महाराजने पाझ्जजन्यनामक, अर्जुनने देवदत्तनामक और भयानक कर्मवाले भीमसेनने पौण्ड्रनामक महाशंख बजाया:3",
 		"english": null
 	},
 	"16": {
@@ -140,7 +140,7 @@
 		"speaker": "sañjaya (सञ्जय)",
 		"original": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः ।\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ ॥१-१६॥",
 		"romanised": "anantavijayam raja kunti-putro yudhisthirah\nnakulah sahadevas ca sughosa-manipuspakau 1.16",
-		"hindi": null,
+		"hindi": "कुन्तीपुत्र राजा युधिष्ठटिरने अनन्तविजयनामक\nऔर नकुल तथा सहदेवने सुघोष और मणिपुष्पकनामक\nशंख बजाये:3",
 		"english": null
 	},
 	"17": {

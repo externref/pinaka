@@ -53,6 +53,10 @@ async def samarkan_font() -> fastapi.responses.FileResponse:
 async def favicon() -> fastapi.responses.FileResponse:
     return fastapi.responses.FileResponse("./assets/favicon.ico")
 
+@app.get(endp.SLASHN_GENERATOR)
+async def slash_n(text: str) -> str:
+    return text.replace("\n", "\\n")
+
 @app.get(endp._INDEX)
 def api_info() -> typing.Dict[str, typing.Union[str, int, typing.List[str]]]:
     return models.APIInfo(
