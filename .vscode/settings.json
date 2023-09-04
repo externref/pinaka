@@ -1,7 +1,7 @@
 {
-    "python.analysis.typeCheckingMode": "basic",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "python.formatting.provider": "none"
+	"tailwindCSS.codeActions": true,
+	"tailwindCSS.suggestions": true,
+	"editor.quickSuggestions": {
+		"strings": true
+	}
 }

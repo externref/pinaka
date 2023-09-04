@@ -1,40 +1,38 @@
-# pinaka
+# create-svelte
 
-![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white)
-![](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![](https://img.shields.io/badge/WakaTime-000000?style=for-the-badge&logo=WakaTime&logoColor=white)
-![](https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white)
-![](https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white)
-![](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
-[![wakatime](https://wakatime.com/badge/user/91b4defa-58b1-4cc7-8a36-6ec947f61823/project/2252ad71-2553-4587-8d8d-78564f064482.svg?style=for-the-badge)](https://wakatime.com/@externref/projects/wzfykzprge)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-pinaka is a simple API for querying sanatana literature including vedas, itihasas and other sanatana texts.
+## Creating a project
 
-### current progress
+If you're seeing this, you've probably already done this step. Congrats!
 
-the API is under development and quite unstable, documentation is updated regularly to keep up with the development roadmap.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-preview deployment: [https://pinaka-1-j7999633.deta.app](https://pinaka-1-j7999633.deta.app) <br>
-documentation: [https://pinaka-1-j7999633.deta.app/docs](https://pinaka-1-j7999633.deta.app/docs) <br>
+## Developing
 
-#### in progress
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-* shrimad bhagavad gita
-* shiv tandav strotam
+```bash
+npm run dev
 
-### contributions
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-any kind of contributions are welcomed! feel free to create an issue and discuss your ideas, or connect through:<br>
+## Building
 
-discord: [externref](https://discord.com/users/580034015759826944)<br>
-mail: shiva02939@gmail.com
+To create a production version of your app:
 
-#### documentation
+```bash
+npm run build
+```
 
-documentation built with `mkdocs` is hosted on github pages.
+You can preview the production build with `npm run preview`.
 
-### why does this exist?
-
-no specific reasons, i'm just trying to get more familiar with my religion and culture while learning new things about web.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
