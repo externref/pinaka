@@ -15,7 +15,7 @@
 
 	<div class="mt-8 mb-2 flex justify-center" style="font-size: 15px;">
 	<a href="https://github.com/externref/pinaka"> <i class="bi bi-github"></i> Github</a>&nbsp|&nbsp
-		<a href="https://externref.github.io/docs"><i class="bi bi-book-half"></i> API Docs</a>&nbsp|&nbsp
+		<a href="https://externref.github.io/pinaka"><i class="bi bi-book-half"></i> API Docs</a>&nbsp|&nbsp
 		<a href="https://discord.gg/MsX7FztFBK"><i class="bi bi-discord"></i> Discord</a> 
 	</div>
 	<div class="flex justify-center text-gray-700 my-2" >

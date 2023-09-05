@@ -1,0 +1,32 @@
+site_name: pinaka | docs
+site_url: https://pinaka.up.railway.app/
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  logo: assets/pinaka_text_samarakan.png
+  palette:
+    primary: custom
+    scheme: slate
+
+nav:
+  - index.md
+  - bhagavad gita: gita.md
+  - shiv tandava: tandava.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+
+extra:
+  version: 0.0.1
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/externref/pinaka
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/MsX7FztFBK
