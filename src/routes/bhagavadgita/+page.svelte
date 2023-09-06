@@ -35,7 +35,7 @@ fulfill his <i>Kshatriya Dharma</i> ( duty of a warrior ) to uphold <i>Dharma</i
     <ul style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Jump to Adhyaya:</ul>
     {#each adhyayaNames as adhyaya, index}
     <li>
-        <a class="hover:bg-orange-500 w-max" href="bhagavadgita/{index+1}">
+        <a class="hover:bg-orange-500 rounded px-2" href="/bhagavadgita/{index+1}">
             [{(index+1).toString().padStart(2, "0")}]: {adhyaya.at(0)} ({adhyaya.at(1)})
         </a> 
     </li>
