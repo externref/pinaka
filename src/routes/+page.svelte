@@ -5,7 +5,7 @@
       content="in-progress API supporting query of sanatana texts."
       property="og:description"
     />
-    <meta content="." property="og:url" />
+    <meta content="/" property="og:url" />
     <meta content="https://i.imgur.com/SL2Q5Tz.png" property="og:image" />
     <meta content="#F17921" data-react-helmet="true" name="theme-color" />
     <meta name="twitter:card" content="summary_large_image" />
