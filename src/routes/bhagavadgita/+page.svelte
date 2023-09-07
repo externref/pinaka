@@ -1,9 +1,8 @@
-
 <svelte:head>
     <title>pinaka/bhagavadgita</title>
     <meta content="pinaka/bhagavadgita" property="og:title" />
     <meta
-      content="in-progress API supporting query of sanatana texts.<br>Shrimad BhagavadGita (श्रीमद् भगवद्गीता)"
+      content="in-progress API supporting query of sanatana texts.&#x0A;Shrimad BhagavadGita (श्रीमद् भगवद्गीता)"
       property="og:description"
     />
     <meta content="/" property="og:url" />

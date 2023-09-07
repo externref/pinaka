@@ -4,6 +4,20 @@
 	export let data: GitaShloka;
     
 </script>
+
+<svelte:head>
+    <title>pinaka/bhagavadgita/{data.adhyaya}/{data.shloka}</title>
+    <meta content="pinaka/bhagavadgita/{data.adhyaya}/{data.shloka}" property="og:title" />
+    <meta
+      content="in-progress API supporting query of sanatana texts.&#x0A;Shrimad BhagavadGita (श्रीमद् भगवद्गीता)"
+      property="og:description"
+    />
+    <meta content="/" property="og:url" />
+    <meta content="https://i.imgur.com/v39JIYs.png" property="og:image" />
+    <meta content="#F17921" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image" />
+</svelte:head>
+
 <style>
     .shloka_header {
         font-size: x-large;
