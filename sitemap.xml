@@ -2,17 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pinaka.up.railway.app/</loc>
-         <lastmod>2023-09-05</lastmod>
+         <lastmod>2023-09-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pinaka.up.railway.app/gita/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pinaka.up.railway.app/tandava/</loc>
-         <lastmod>2023-09-05</lastmod>
+         <lastmod>2023-09-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
