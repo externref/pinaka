@@ -1,38 +1,29 @@
-# create-svelte
+# pinaka
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+![](./static/shri_ram_banner.png)
 
-## Creating a project
+An under-development API and website for querying various sanatana (/hindu) texts like BhagavadGita, RamCharitManas and various other records like stotrams and puranas.
 
-If you're seeing this, you've probably already done this step. Congrats!
+-----
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+preview deployment: <https://pinaka.up.railway.app>
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+api endpoint base: <https://pinaka.up.railway.app/api>
 
-## Developing
+documentation: <https://externref.github.io/pinaka>
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+All the internal libraries used in the project are located in the [pinaka-api](https://github.com/pinaka-api) organisation.
 
-```bash
-npm run dev
+## Current Progress/Plan Map
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Any kind of contributions are welcome. 
 
-## Building
+### 1. BhagavadGita (in-progress)
+The gita API is under progress, refer to [pinaka-api/lib_gita](https://github.com/pinaka-api/lib_gita) if you want to contribute to the project.
 
-To create a production version of your app:
+### 2. RamCharitManas (planned)
+Will be updated.
 
-```bash
-npm run build
-```
+## Contact
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+You can contact me using discord ([@externref](https://discord.com/users/1134016724132446208)) or gmail (externref@gmail.com)
