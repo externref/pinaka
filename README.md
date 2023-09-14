@@ -4,7 +4,7 @@
 
 An under-development API and website for querying various sanatana (/hindu) texts like BhagavadGita, RamCharitManas and various other records like stotrams and puranas.
 
------
+---
 
 preview deployment: <https://pinaka.up.railway.app>
 
@@ -16,12 +16,14 @@ All the internal libraries used in the project are located in the [pinaka-api](h
 
 ## Current Progress/Plan Map
 
-Any kind of contributions are welcome. 
+Any kind of contributions are welcome.
 
 ### 1. BhagavadGita (in-progress)
+
 The gita API is under progress, refer to [pinaka-api/lib_gita](https://github.com/pinaka-api/lib_gita) if you want to contribute to the project.
 
 ### 2. RamCharitManas (planned)
+
 Will be updated.
 
 ## Contact

@@ -1,3 +1,5 @@
+import type { RequestEvent } from './$types';
+
 interface QueryRequest extends Request {
 	json(): Promise<{
 		shlokas: number[] | undefined;
@@ -5,7 +7,7 @@ interface QueryRequest extends Request {
 	}>;
 }
 
-export interface QueryPOSTData {
+export interface QueryPOSTData extends RequestEvent {
 	request: QueryRequest;
 	params: {
 		adhyaya: string;
